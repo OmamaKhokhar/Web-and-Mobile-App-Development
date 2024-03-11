@@ -1,0 +1,46 @@
+html{
+    font-size: 22px;
+}
+
+body{
+    color:whitesmoke;
+    background: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #FF735C;
+}
+
+a:visited{
+    color: whitesmoke;
+}
+
+a:hover , a:active{
+    color: #FF651E;
+}
+
+mark{
+    background-color:#FF651E;
+    color:whitesmoke
+}
+
+th, caption{
+    font-size: medium;
+}
+
+table, tr, td{
+    font-size:smaller;
+}
+
+
+table, tr, th, td, caption{
+   
+    border: 1px solid #FF735C;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+
+}
+
+

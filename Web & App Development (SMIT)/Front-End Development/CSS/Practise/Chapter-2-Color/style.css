@@ -1,0 +1,37 @@
+/* Chapter 2 : Colors 
+
+Foreground Colors: The color property allows user to specify the color of text inside the element.  */
+
+
+/* Color Names */
+h1{
+    color: whitesmoke;
+}
+
+/* #HEX Value */
+h2{
+    color: #ffff;
+}
+
+/* RGB Value */
+p{
+    color: rgb(100, 100, 90);
+}
+
+/* Backround Color: CSS treat each element like a box and this property sets the background color*/
+
+body{
+    background-color: rgb(200,200,200);
+}
+
+h1{
+    background-color: Darkcyan;
+}
+
+h2{
+    background-color: #ee3e80;
+}
+
+p{
+    background-color: white;
+}

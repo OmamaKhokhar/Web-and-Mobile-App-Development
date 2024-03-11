@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "SF-bold";
+    src: url(assets/Fonts/SF-Pro-Display-Font-Family/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+    font-family: "SF-medium";
+    src: url(assets/Fonts/SF-Pro-Display-Font-Family/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+    font-family: "cavet-bold";
+    src: url(assets/Fonts/Caveat-Font-Family/Caveat-Bold.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #09002B;
+}
+
+/* Header Setting */
+.header {
+    background-color: #1C0030;
+    width: 93%;
+    height:81px;
+    padding-left: 100px;
+}
+
+div.header-nav,
+div.logo,
+.social-nav {
+    display: inline-block;
+}
+
+
+/* Navigation Bar */
+div.header-nav li {
+    display: inline-block;
+    font-family: "SF-bold";
+    font-size: 1.1rem;
+    margin-right: 90px;
+    color: white;
+}
+
+/* logo */
+div.logo {
+ margin-top: 12px;
+}
+
+div.logo img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 95px;
+}
+
+div.logo h1 {
+    display: inline-block;
+    margin-left: -150px;
+    font-family: "cavet-bold";
+    font-size: 2.875em;
+    color: white;
+}
+
+/* Social Media Nav */
+
+.social-nav ul{
+    margin-left: 245px;
+}
+
+.social-nav li {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    border-radius:20px;
+    margin-left: 15px;
+    background-color: #4303A4;
+}
+
+.social-nav li:nth-child(1){
+    padding-top: 4.5px;
+}
+.social-nav li >img {
+    width: 100%;
+}
+
+
+/* Main Section */
+
+
+/* Background image with Text */
+
+/* Bg-Image */
+
+div.background >img{
+    display: inline-block;    
+    width: 100%;
+}
+
+/* Block of Text */
+
+div.bg-text{
+    display: inline-block;
+    width: 39%;
+    margin-top: -55%;
+    margin-left: 100px ;
+    vertical-align: top;
+}
+
+/* Heading */
+
+div.bg-heading{
+    font-family: "SF-bold";
+    font-size: 38px;
+    color: white;
+}
+
+/* Tagline */
+
+div.bg-tagline{
+    font-family: "SF-bold";
+    font-size: 33px;
+    color: white;
+}
+
+/* Apple Podcast Button */
+
+a.apple-podcast-link{
+    width: fit-content;
+}
+
+button.apple-button{
+    border-style: none;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #3531A9;
+    margin-top: 13px;
+    padding: 8px; 
+    border-radius: 10px;
+}
+
+.apple-button-icon{
+    display: inline-block ;
+    vertical-align: middle;
+}
+
+.apple-button-content{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3px;
+}
+
+.apple-button-first-content{
+    font-family: "SF-medium";
+    font-size: 12px;
+}
+
+.apple-button-second-content{
+    font-family: "SF-bold";
+    font-size: 16px;
+}
+
+
+
+
+

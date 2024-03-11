@@ -1,0 +1,457 @@
+<!-- Lectures:
+lecture 2 - Head include: 
+Detailed info about Head element: Meta element - Link element(used for Fav icon & Linked other files like CSS) - Basic attribute
+
+lecture 3 - Text include:
+Text Elements:  Heading , Paragraph , Break line and block level and Inline level element and HTML entities 
+
+Lecture 4 - List include:
+Ordered List, Unordered List, Defination List, Nested List 
+
+Lecture 5 - Link include: 
+Anchor tag  with its Attributes(href, target, Download) , Section elment , ID attribute , Types of Anchor tag for Relative URL, Ubsolute URL, ID , Email, Telphone 
+
+Lecture 6 - Image include:
+Image Element with its attribute(src, alt, title, Loading, Width or Height), Figure Element with Image and figcaption element inside. 
+
+Lecture 7 - Semantic Tags:
+Header, Main, Article, footer, Navigation with ts attribute(aria-label, aria-labeledby(if there is an id given to heading in nav element) ), aside, Detail with summary element, time with its attrbute (date-time), div & span(non semantic)
+
+Lecture 8 - Table Tags:
+Table Element like Table Head, Table Body, Table Footer, Table heading, Table row, Table Data , with its attribute(Scope, Rowspan, Colspan)
+
+Lecture 9 - Form Tags:
+Form Element like Fieldset, Legent, Label with its attibute (For),Input wth its attribute (Name, Type, ID, placeholder, Required, Autofocus,value), Field area, select, Submit, Button-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="description" content="This page include practise about HTML course by Dave Gray">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" href="assets/html5_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="#">My Goals For This Year</h1>
+
+        <nav aria-labelledby="content">
+            <h2 id="content">Content</h2>
+            <ul>
+                <li><a href="#html"> Learning HTML</a></li>
+                <li><a href="#schedule">Planning An Ideal Schedule</a></li>
+                <li><a href="#boardexam">Planning For Board Exams</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+
+        <article id="html">
+            <h2>I`m Ready to learn HTML.</h2>
+            <p>This is my first web page</p>
+
+            <section>
+                <h3>HTML - Hyper Text Markup Language</h3>
+
+                <img src="assets/html5.png" alt="HTML5 icon" title="Learning HTML5 for Web Developmet" width="256"
+                    height="256" />
+
+                <figure>
+                    <figcaption>An Example HTML Code:</figcaption>
+                    <p><code>&lt;h1&gt; This is a heading. &lt;/h1&gt;</code></p>
+                </figure>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="schedule">
+            <h2>My Daily Schedule:</h2>
+
+            <section>
+                <h3>What i Coverd:</h3>
+                <p>
+                    Let see how:
+                    <br />&nbsp;&nbsp;&nbsp;...I learn HTML for Web development.
+                    <br />&nbsp;&nbsp;&nbsp;...I plan my Dialy Schedule for my Board Exam.
+                    <br />&nbsp;&nbsp;&nbsp;...I watch Dev Gray Course about
+                    <abbr title="Hyper Text Markup language">HTML</abbr> and used resources given in
+                    <a href="https://github.com/gitdagray/html_course/tree/main" target="_blank">Github</a>.
+                    <br />&nbsp;&nbsp;&nbsp;...I read John Duckett
+                    <a href="assets/duckett.pdf" download="duckett.pdf">E-book</a> about
+                    <abbr title="Hyper Text Markup language">HTML</abbr>.
+                </p>
+
+                <aside>
+                    <details>
+                        <summary>Can you Guess <mark>How Much</mark> i code in a day?</summary>
+                        <p>I almost code for <time datetime="PT4H">4 Hour</time>per day</p>
+                    </details>
+                </aside>
+
+                <br>
+
+                <h3>Time Table:</h3>
+
+                <table>
+                    <caption>Dialy Schedule <em>(IDEAL)</em></caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                            <th scope="col">No of Water Glass</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="9">Morning</th>
+                            <td><time datetime="05:00">05:00am</time></td>
+                            <td>Wake up</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="05:30">05:30am</time> - <time datetime="06:00">06:00am</time></td>
+                            <td>Fresh Up</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="06:00">06:00am</time> - <time datetime="07:00">07:00am</time></td>
+                            <td>Fajr Salah & Read Quran </td>
+                            <td>1 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="07:00">07:00am</time> - <time datetime="07:30">07:30am</time></td>
+                            <td>Walk (GYM)</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="07:30">07:30am</time> - <time datetime="08:00">08:00am</time></td>
+                            <td>Breakfast</td>
+                            <td>1 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="08:00">08:00am</time> - <time datetime="09:00">09:00am</time></td>
+                            <td>House Chores</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="09:00">09:00am</time> - <time datetime="11:00">11:00am</time></td>
+                            <td>Study Seesion (1)</td>
+                            <td>2 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="11:00">11:00am</time> - <time datetime="11:30">11:30am</time></td>
+                            <td>Study - Break</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="11:30">11:30am</time> - <time datetime="12:00">12:00am</time></td>
+                            <td>Fresh Up</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="6">After Noon</th>
+                            <td><time datetime="12:00">12:00pm</time> - <time datetime="13:00">01:00pm</time></td>
+                            <td>Study session (2)</td>
+                            <td>1 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="13:00">01:00pm</time> - <time datetime="13:30">01:30pm</time></td>
+                            <td>Luunch</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="13:30">01:30pm</time> - <time datetime="14:00">02:00pm</time></td>
+                            <td>Zuhr Salah</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="14:00">02:00pm</time> - <time datetime="14:30">02:30pm</time></td>
+                            <td>House Chores!</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="14:30">02:30pm</time> - <time datetime="16:30">04:30pm</time></td>
+                            <td>Take A Nap!</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="16:30">04:30pm</time> -
+                                <time datetime="17:00">05:00pm</time>
+                            </td>
+                            <td>Fresh up</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="4">Evening</th>
+                            <td><time datetime="17:00">05:00pm</time> - <time datetime="17:30">05:30pm</time></td>
+                            <td>Asar Salah</td>
+                            <td>1 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="17:30">05:30pm</time> - <time datetime="18:00">06:00pm</time></td>
+                            <td>Chai Time!</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="18:00">06:00pm</time> - <time datetime="19:30">07:30pm</time></td>
+                            <td>Coding session</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="19:30">07:30pm</time> - <time datetime="20:00">08:00pm</time></td>
+                            <td>Magrib Salah</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="6">Night</th>
+                            <td><time datetime="20:00">08:00pm</time> - <time datetime="21:30">09:30pm</time></td>
+                            <td>Coding session</td>
+                            <td>1 - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="21:30">09:30pm</time> - <time datetime="22:00">10:00pm</time></td>
+                            <td>Isha Salah & Dinner</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr> 
+                            <td><time datetime="22:00">10:00pm</time> - <time datetime="22:30">10:30pm</time></td>
+                            <td>House Chores</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="22:30">10:30pm</time> - <time datetime="23:30">11:30pm</time></td>
+                            <td>Academy Work</td>
+                            <td>Half - Glass</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="23:30">11:30pm</time> - <time datetime="01:00">12:00am</time></td>
+                            <td>Tommorrow Plan & Ready for Sleep</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="01:00">01:00pm</time> - <time datetime="05:00">05:00am</time></td>
+                            <td>Sleep <em>(Have a nice Sleep!)</em></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">This is an ideal Schedule without Academy timming that can be adjust with study
+                                sesions!</td>
+                            <td>Total : 10 Glasses </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </section>
+
+        </article>
+
+        <hr />
+
+        <article id="boardexam">
+            <h2>Planner For Board Exam</h2>
+
+            <section>
+                <h3>I am Also Planning a Schedule for my Board Exam:</h3>
+                <figure>
+                    <img src="/assets/board_exam_preparation.jpg" alt="Board Exam Preparation"
+                        title="Planning for Board Exam" loading="lazy" width="400" height="400" />
+                    <figcaption>
+                        Planning a Productive Schedule for Board Exams
+                    </figcaption>
+                </figure>
+
+                <ul>
+                    <li>
+                        <p>My Board Exams are in the beginning of May.</p>
+                    </li>
+                    <li>
+                        <p>
+                            I am <em>working Hard</em> to score <strong>high</strong> in
+                            exams.
+                        </p>
+                    </li>
+                    <li>
+                        <p>I want to prepare a Schedule for 3 weeks .</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Subjects:</h3>
+                <p>Let see the Subject with number of chapter i want to cover:</p>
+                <dl>
+                    <dt>Physics:</dt>
+                    <dd>I will Cover from Chapter 1 to Chapter 6.</dd>
+                    <dt>Computer Science:</dt>
+                    <dd>I will cover from Chapter 1 to Chapter 3.</dd>
+                    <dt>Math:</dt>
+                    <dd>I will cover from Chapter 2,3,7 & 10.</dd>
+                </dl>
+            </section>
+
+        </article>
+
+        <hr />
+
+        <article id="contact">
+            <h2>Contact Me:</h2>
+
+            <form action="https://httpbin.org/get" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="firstname"> First Name:
+                            <input type="text" name="firstname" id="firstname" placeholder="Haris" autocomplete="on"
+                                required maxlength="15" autofocus>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="lastname">last Name:
+                            <input type="text" name="lastname" id="lastname" placeholder="Khokhar" autocomplete="on"
+                                required maxlength="15">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="username">Username:
+                            <input type="text" name="password" id="username" placeholder="hariakhokhar" required
+                                maxlength="15">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:
+                            <input type="password" name="password" id="password" placeholder="Secret!" required
+                                minlength="8" >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone:
+                            <input type="tel" name="phone" id="phone" placeholder="03xxxxxxxxx"
+                                pattern="{0}[1]{0-9}[3]{0-9}[7]" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="decade">Favourite Decade:
+                            <input type="number" name="decade" id="decade"
+                             min="1950" max="2020" step="5" value="1985">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="coffee">Favourite Coffe:
+                            <select name="coffee" id="coffee" size="4">
+
+                                <optgroup label="Coffee">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="iced coffee" selected>Iced Coffee</option>
+                                </optgroup>
+
+                                <optgroup label="Espresso Drinks">
+                                    <option value="latte">latte</option>
+                                    <option value="cappuccino">Cappuccino</option>
+                                    <option Value="cortado">Cortado</option>
+                                    <option value="americano">Americano</option>
+                                    <option value="others">others</option>
+                                </optgroup>
+
+                            </select>
+                        </label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>What is your Favourite Food?</legend>
+
+                    <input type="radio" name="food" id="biryani" value="biryani">
+                    <label for="biryani">Biryani</label>
+                    <br>
+                    <input type="radio" name="food" id="nihari" value="nihari">
+                    <label for="nihari">Nihari</label>
+                    <br>
+                    <input type="radio" name="food" id="qorma" value="qorma">
+                    <label for="qorma">Qorma</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>What is you favourite Pet?</legend>
+
+                    <input type="checkbox" name="pet" id="cat" value="cat" checked>
+                    <label for="cat">Cat</label>
+                    
+                    <br>
+
+                    <input type="checkbox" name="pet" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+
+                    <br>
+
+                    <input type="checkbox" name="pet" id="rabbit" value="rabbit">
+                    <label for="rabbit">Rabbit</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send me a Note</legend>
+                    <label for="message">Your   Message:</label> 
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="8" placeholder="type your message here"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Omama Khokhar</a> &gt;&gt;&gt;
+        </p>
+        <p>Address:</p>
+        <address>
+            Noman Grand City Block F <br />Gulstan-e-Johar Block 17 <br />Karachi,
+            Sindh, Pakistan
+        </address>
+        <p>Contact me on: <a href="mailto:workwithomama@gmail.com">Email</a></p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+
+</body>
+
+</html>

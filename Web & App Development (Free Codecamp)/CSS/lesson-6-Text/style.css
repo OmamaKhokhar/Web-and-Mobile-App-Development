@@ -1,0 +1,56 @@
+/* Typography: It is the way in which a text is arranged and persented */
+
+/* Text Properties: It is used to format a text`s layouts */
+/* Font Properties: It is used to style a text */
+
+body{
+    padding: 10%;
+
+    /* Font Size: This property is used to define the size of the font character. It takes absolute keywords in whch the value is relative to the root element (small) , units (Absolute or Relative), relative keywords. in which the value is relative to the parent (Smaller). */
+    font-size: 2rem;
+
+    /* Font Family: This propeet is used to defines the priority in which the browser should choose the font family. You can use generic font family names as a fallback.
+    Serif: All characters have stroke endings , Sans-serif: No character has stroke endings. , Monospace: All characters have the same width, Cursive %& Fantasy .  */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* input,button{
+    font:inherit;
+} */
+
+
+h1{
+    /* Text Shadow: This property is used to defines the shadow of the text content.  It takes four values, representing the horizontal offset, vertical offset, blur radius, and color of the shadow. */
+    text-shadow: 2px -3px 5px rgba(0, 0, 0, 0.652);
+
+    /* Font Weight: This property is used to  determines the thickness of the font character. */
+    font-weight: lighter;
+
+    /* Font Style: This pproperty is used to define how much font charactr is slanted.*/
+    font-style: oblique;
+
+}
+
+p{
+    /* Text Decoration : This property is used to apply decoration on the font  applied on  element`s text. */
+    text-decoration-line: underline;
+    text-decoration-color: #1a4468;
+    text-decoration-thickness: 2px;
+
+    /* Text Transform: This property is used to control the capitalization of element`s text.*/
+    text-transform: capitalize;
+
+    /* Text Align: This property is used to control the horizantolly alignment of the inline content*/
+    text-align: justify;
+
+    /* Thext indent (Better with em): This property is used to control the indentation of the element's first line of text. */
+    text-indent: -1em;
+
+    /* Line Height: This is property is used to control  the height of a single line of text. */
+    line-height: 1.5;
+
+    /* Letter Spacing or Word Spacing: This property is used to control the space between the two letter and word*/
+    letter-spacing: 0.1em;
+
+}
+

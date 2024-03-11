@@ -1,0 +1,101 @@
+/* For Survey: Steps */
+
+ body{
+    background-color: #F5F5F5;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+    color: #252422;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.active{
+    text-align: center;
+    background-color: #EB5E28;
+    color: #F5F5F5;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    font-style:oblique;
+}
+.unactive{
+    text-align: center;
+    background-color: #403D39;
+    color: #F5F5F5;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    font-style:oblique;
+}
+
+
+
+.formbody{
+    background-color: #252422;
+    width: 400px;
+    padding: 50px;
+    border-radius: 30px;
+    border: 3px solid #403D39;
+}
+
+form>label{
+    color: #F5F5F5 ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique;
+}
+
+form>input,textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form>input[type="radio"]{
+    width: fit-content;
+}
+
+ol.question>li{
+    color: #F5F5F5 ;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique;
+}
+
+footer{
+    text-align: left;
+    color: #403D39;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+button{
+    background-color: #EB5E28;
+    color: #F5F5F5;
+    width: 100px;
+    padding: 3px;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    font-style: oblique;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button.next:hover {
+    background-color: #c14b1d;
+}

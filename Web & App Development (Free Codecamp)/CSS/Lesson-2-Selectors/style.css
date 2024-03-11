@@ -1,0 +1,40 @@
+/* Element Selector */
+body {
+    font-size: 22px;
+}
+
+/* Element Selector */
+main{
+    font-family: monospace;
+}
+
+/* Element Selector (Inherit the Font Size from the body) */
+button ,input ,text area,select{
+    font-size: inherit;
+}
+ 
+/* More than One Element Selecor */
+h1,h2{
+    color:blue;
+}
+
+/* Element Selector  (!important) */
+p {
+    color: purple;
+}
+
+/* Class Selector */
+.highlight{
+    text-transform: uppercase;
+    background-color: bisque;
+}
+
+/* Class Selector */
+.grey {
+    color:grey;
+}
+
+/* ID selector */
+#second {
+    font-style: italic;
+}

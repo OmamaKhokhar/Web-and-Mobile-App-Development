@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="descripition" content="Step 3 Of Election Survey from Survey Sphere">
+    <title>Election Survey</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" href="../assets/icons/Survey_Sphere_Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1>Election Survey 2024</h1>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="container">
+            <h2 class="unactive">Account Details</h2>
+            &nbsp;
+            <h2 class="unactive">Personal Details</h2>
+            &nbsp;
+            <h2 class="active">Survey (Provincial)</h2>
+            &nbsp;
+            <h2 class="unactive">Survey (National)</h2>
+        </section>
+
+        <div class="container">
+
+            <section class="formbody">
+                <form action="https://httpbin.org/post" method="post">
+
+
+                    <ol class="question">
+
+                        <li>
+                            <label for="per"><b>Likelihood of Voting:</b> On a scale of 1 to 10, how likely are you to
+                                participate in the upcoming elections?
+                                <br>
+                                <br>
+                                <input type="number" name="per" id="per" min="0" max="10" step="1" value="5">
+                            </label>
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <label for="views"><b>Views on Election Transparency:</b> How confident are you in the
+                                transparency of the electoral process in your constituency?</label>
+                            <br>
+                            <br>
+
+                            <textarea type="text" name="views" id="view" autocapitalize="on" maxlength="300"
+                                placeholder=" I think that ..."></textarea>
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <label for="last_vote"><b>Previous Vote:</b> Which party did you vote in
+                                <strong><em>2018</em></strong> for
+                                Provincial Election: </label>
+
+                            <br>
+                            <br>
+
+                            <input type="radio" name="last_vote" id="pti" value="pti">
+                            <label for="pti">Pakistan Tahreek Insaaf (PTI)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="pmln" value="pmln">
+                            <label for="pmln">Pakistan Muslim League Noon (PMLN)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="ppp" value="ppp">
+                            <label for="ppp">Pakistan People`s Party (PPP)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="MQM" value="mqm">
+                            <label for="ppp">Muttahida Qaumi Movement (MQM)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="ji" value="ji">
+                            <label for="ji">Jamat Islami (JI)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="jui-f" value="anp">
+                            <label for="anp">Awami National Party (ANP):</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="jui-f" value="psp">
+                            <label for="psp">Pak Sarzameen Party (PSP):</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="jui-f" value="jui-f">
+                            <label for="jui-f">Jamiat Ulema-e-Islam (F) (JUI-F)</label>
+
+                            <br>
+                            <input type="radio" name="last_vote" id="jui-f" value="bap">
+                            <label for="bap">Balochistan Awami Party (BAP):</label>
+
+
+
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <label for="next_vote"><b>Upcomming Vote:</b> Which party do you vote in
+                                <strong><em>2023</em></strong> for
+                                Provincial Election: </label>
+
+
+
+
+                            <br>
+                            <br>
+
+
+
+                            <input type="radio" name="next_vote" id="pti" value="pti">
+                            <label for="pti">Pakistan Tahreek Insaaf (PTI)</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="pmln" value="pmln">
+                            <label for="pmln">Pakistan Muslim League Noon (PMLN)</label>
+
+                            <br>
+
+                            <input type="radio" name="next_vote" id="ppp" value="ppp">
+                            <label for="ppp">Pakistan People`s Party (PPP)</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="ji" value="ji">
+                            <label for="ji">Jamat Islami (JI)</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="jui-f" value="jui-f">
+                            <label for="jui-f">Jamiat Ulema-e-Islam (F) (JUI-F)</label>
+                            <br>
+                            <input type="radio" name="next_vote" id="MQM" value="mqm">
+                            <label for="ppp">Muttahida Qaumi Movement (MQM)</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="ji" value="ji">
+                            <label for="ji">Jamat Islami (JI)</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="jui-f" value="anp">
+                            <label for="anp">Awami National Party (ANP):</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="jui-f" value="psp">
+                            <label for="psp">Pak Sarzameen Party (PSP):</label>
+
+                            <br>
+                            <input type="radio" name="next_vote" id="jui-f" value="bap">
+                            <label for="bap">Balochistan Awami Party (BAP):</label>
+
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <label for="change_vote"><b>Reasons for Voting Change:</b> If you changed your voting
+                                preference, what are the primary reasons
+                                for this change?</label>
+                            <br>
+                            <br>
+
+                            <textarea type="text" name="change_vote" id="change_vote" autocapitalize="on"
+                                maxlength="300" placeholder="The Development in infarastruture..."></textarea>
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <label for="expectations"><b>Expectations from Elected party:</b>What specific expectations
+                                do you have from the party you vote for
+                                in terms of governance and representation?</label>
+                            <br>
+                            <br>
+
+                            <textarea type="text" name="expectations" id="expectations" autocapitalize="on"
+                                maxlength="300" placeholder="The Development in infarastruture..."></textarea>
+                        </li>
+
+
+                    </ol>
+                </form>
+
+                <br>
+                <br>
+
+
+                <a class="link" href="step_2.html"><button class="next">Back</button></a>
+                <a class="link" href="step_4.html"><button class="next">Next</button></a>
+            </section>
+
+            <div>
+    </main>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; Survey Sphere</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Units And Size */
+
+/* Types of Units: 
+Absolute Units: Absolute length units are fixed and do not depend on other properties. 
+Relative Units: Relative length units are relative to something else size*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+article{
+    /* Pexels: Px is an absolute units which is 1px = 1/96th of 1inch*/
+    border: 2px solid rgb(207, 207, 207);
+
+    /* Percentage: % is relative unit . it`s value is relative to another property or pavalue of the parent property.  */
+    width: 50%;
+}
+
+h1{
+    border: 2px dashed black;
+
+    /* Viewport Width/height: vw or vh is a relative unit which gives % of the viewport's width (vw) or height (vh). */
+    width: 50vw;
+    font-size: 38px;
+
+    /* em :  is a relative unit which means my parent element's font-size.It is relatived to the Font size of the parent or font size of the element itself */
+    padding: 0.5em;
+}
+
+p{
+    /* character: ch is a relative unit. it is related to the advance measure (width) of the glyph "0" of the element's font. */
+   width: 30ch;
+   
+   /* rem: is a relative unit which means my root elment font-size. it is relatived to the Font size of the root element.  */
+   font-size: 1.5rem;
+}
+

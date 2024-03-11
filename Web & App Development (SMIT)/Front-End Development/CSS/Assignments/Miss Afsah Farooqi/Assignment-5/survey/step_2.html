@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="descripition" content="Step 2 of Election Survey from Survey Sphere">
+    <title>Election Survey</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" href="../assets/icons/Survey_Sphere_Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1>Election Survey 2024</h1>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="container">
+            <h2 class="unactive">Account Details</h2>
+            &nbsp;
+            <h2 class="active">Personal Details</h2>
+            &nbsp;
+            <h2 class="unactive">Survey (Provincial)</h2>
+            &nbsp;
+            <h2 class="unactive">Survey (National)</h2>>
+        </section>
+
+        <div class="container">
+
+            <section class="formbody">
+                <form action="https://httpbin.org/post" method="post">
+
+                    <label for="firstname">First Name: </label>
+                    <br>
+                    <input type="text" name="firstname" id="firstname" placeholder="Omama" autofocus autocomplete="on"
+                        maxlength="10" autocapitalize="words" autorequired>
+
+                    <br>
+                    <br>
+
+                    <label for="second_name">Second Name:</label>
+                    <br>
+                    <input type="text" name="second_name" id="second_name" placeholder="Khokhar" autocomplete="on"
+                        maxlength="10" autocapitalize="words" required>
+
+                    <br>
+                    <br>
+
+
+                    <label for="gender">Gender: </label>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="Female">Female</label>
+
+
+                    <br>
+                    <br>
+
+                    <label for="date_of_birth">Date of Birth: </label>
+                    <br>
+                    <input type="date" name="date_of_birth" id="date_of_birth" required>
+
+                    <br>
+                    <br>
+
+                    <label for="province">Province: </label>
+                    <br>
+                    <input type="radio" name="province" id="sindh" value="sindh">
+                    <label for="sindh">Sindh</label>
+                    <br>
+                    <input type="radio" name="province" id="punjab" value="punjab">
+                    <label for="punjab">punjab</label>
+                    <br>
+                    <input type="radio" name="province" id="kpk" value="kpk">
+                    <label for="kpk"><abbr title="Khyber Pakhtunkhwa">KPK</abbr></label>
+                    <br>
+                    <input type="radio" name="province" id="balochistan" value="balochistan">
+                    <label for="balochistan">Balochistan</label>
+                    <br>
+                    <input type="radio" name="province" id="gilgit_baltistan" value="gilgit_baltistan">
+                    <label for="gilgit_baltistan">Gilgit-Baltistan:</label>
+                    <br>
+                    <input type="radio" name="province" id="ajk" value="ajk">
+                    <label for="ajk">Azad Jammu and Kashmir</label>
+
+
+                    <br>
+                    <br>
+
+                    <label for="address">Address: </label>
+                    <br>
+                    <textarea type="text" name="address" id="address" autocapitalize="on" required maxlength="50"
+                        placeholder="Noman Grand City , Gulstan-e-Johar Block - 17"></textarea>
+
+                    <br>
+                    <br>
+
+                    <label for="telphone">Phone No:</label>
+                    <br>
+                    <input type="tel" name="telphone" id="telphone" placeholder="03XXXXXXXXXX"
+                        pattern="[0-9]{1}[0-9]{3}[0-9]{7}" required>
+                </form>
+
+                <br>
+                <br>
+
+
+                <a class="link" href="step_3.html"><button class="next">Next</button></a>
+                <a class="link" href="step_1.html"><button class="next">Back</button></a>
+            </section>
+
+            <div>
+    </main>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; Survey Sphere</p>
+    </footer>
+
+</body>
+
+</html>
