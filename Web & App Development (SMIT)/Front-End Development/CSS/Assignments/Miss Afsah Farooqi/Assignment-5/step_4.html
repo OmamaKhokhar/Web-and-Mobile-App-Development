@@ -21,6 +21,7 @@
 
     <main>
 
+        <!-- For Page Active Status -->
         <section class="container">
             <h2 class="unactive">Account Details</h2>
             &nbsp;
@@ -31,12 +32,16 @@
             <h2 class="active">Survey (National)</h2>
         </section>
 
+        <!-- For Form -->
         <div class="container">
 
             <section class="formbody">
                 <form action="https://httpbin.org/post" method="post">
 
+                    <!-- For Question -->
                     <ol class="question">
+
+                        <!-- YOur Last Vote -->
                         <li>
                             <label for="last_vote"><b>Previous Vote:</b> Which party did you vote in
                                 <strong><em>2018</em></strong> for
@@ -72,6 +77,7 @@
                         <br>
                         <br>
 
+                        <!-- Your Next Vote -->
                         <li>
                             <label for="next_vote"><b>Upcomming Vote:</b> Which party do you vote in
                                 <strong><em>2023</em></strong> for
@@ -107,6 +113,7 @@
                         <br>
                         <br>
 
+                        <!-- Reasons for vote change -->
                         <li>
                             <label for="change_vote"><b>Reasons for Voting Change:</b> :If you changed your voting
                                 preference, what are the primary reasons
@@ -121,6 +128,7 @@
                         <br>
                         <br>
 
+                        <!-- Expectations from elected party -->
                         <li>
                             <label for="expectations"><b>Expectations from Elected party:</b> What specific expectations
                                 do you have from the party you vote for
@@ -134,7 +142,8 @@
                     </ol>
 
                     <br>
-                    <a class="link"  href="step_3.html"><button class="next">Back</button></a>
+                    <!-- Next & Back Page Button -->
+                    <a class="link" href="step_3.html"><button class="back">Back</button></a>
                     <button type="submit">Submit</button>
                 </form>
                 <br>

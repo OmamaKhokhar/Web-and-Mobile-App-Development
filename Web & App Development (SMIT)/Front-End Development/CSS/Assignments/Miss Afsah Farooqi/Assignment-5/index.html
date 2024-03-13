@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Omama Khokhar">
-    <meta name="descripition" content="Survey Detail">
-    <title>Survey | Detail</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="descripition" content="Step 1 of Election Survey from Survey Sphere">
+    <title>Election Survey</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
     <link rel="icon" href="../assets/icons/Survey_Sphere_Favicon.ico" type="image/x-icon">
 </head>
 
-<body class="body">
+<body>
 
     <header>
         <h1>Election Survey 2024</h1>
@@ -22,26 +22,73 @@
 
     <main>
 
-        <section>
-
-            <p>Participate in our Pakistan`s Election Survey, to contribute to shaping the future of Pakistan. Your
-                insights play a crucial role in understanding public sentiment and improving our democratic processes.
-            <p>
-
-            <h3>How to Fill The form?</h3>
-            <ol>
-                <li>Fill the Account Details</li>
-                <li>Fill the Persoanl Details</li>
-                <li>Fill the Election Survey</li>
-            </ol>
-
-            <p>Clcik Here to Start</p>
-            <a href="survey/step_1.html"><img src="../assets/icons/next.png" width="" height="" alt="Next Button"
-                    title="Click Here for Next Page"></a>
-
+        <!-- For Page Active Status -->
+        <section class="container">
+            <h2 class="active">Account Details</h2>
+            &nbsp;
+            <h2 class="unactive">Personal Details</h2>
+            &nbsp;
+            <h2 class="unactive">Survey (Provincial)</h2>
+            &nbsp;
+            <h2 class="unactive">Survey (National)</h2>
         </section>
 
+        <!-- For Form -->
+        <div class="container">
+
+            <section class="formbody">
+                <form action="https://httpbin.org/post" method="post">
+
+                    <!-- For User Name -->
+                    <label for="username">User Name: </label>
+                    <br>
+                    <input type="text" name="username" id="username" placeholder="omamakhokhar" autofocus
+                        autocomplete="on" maxlength="20" required>
+
+                    <br>
+                    <br>
+
+                    <!-- For Email -->
+                    <label for="email">Email Address: </label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="omamakhokhar@gmail.com" autocomplete="on"
+                        maxlength="20" required>
+
+                    <br>
+                    <br>
+
+                    <!-- For Password -->
+                    <label for="password">Password: </label>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="Secret" minlength="8" required>
+
+                    <br>
+                    <br>
+
+                    <!-- For Confirm Password -->
+                    <label for="confirm_password">Confirm Password: </label>
+                    <br>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Rewrite Password"
+                        minlength="8" required>
+                </form>
+
+                <br>
+                <br>
+                <!-- Next Page Button -->
+                <a class="link" href="step_2.html"><button class="next">Next</button></a>
+
+            </section>
+
+            <div>
+
     </main>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; Survey Sphere</p>
+    </footer>
 
 </body>
 
