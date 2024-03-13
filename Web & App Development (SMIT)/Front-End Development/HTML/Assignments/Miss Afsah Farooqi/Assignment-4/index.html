@@ -3,86 +3,167 @@ This Include Chapter 7 : Form -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-4</title>
-  </head>
-  <body>
-    <h1 id>Create an Account</h1>
 
-    <form action="http://www.example.com/signup.php" method="get">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment-4</title>
+</head>
 
-        <p>
-            <label for="firstname">First Name: </label> <br/>
-            <input type="text" name="firstname" id="firstname" placeholder="John" autocomplete="on" required="required" maxlength="10" />
-        </p>
-       
-        <p> 
-            <label for="lastname">Last Name: </label> <br/>
-            <input type="text" name="lastname" id="lastname" placeholder="Wick" autocomplete="on" required="required" maxlength="10"/>
-        </p>
+<body>
 
-        <p>
-            <label for="email">Email: </label> <br/>
-            <input type="email" name="email" id="email" placeholder="Johnwick@gmail.com" required="required" maxlength="20" size="20" />
-        </p>
+  <!-- Sign Up form -->
+  <h1>Create an Account</h1>
 
-        <p>
-        <label for="password">Password: </label> <br/>
-        <input type="password" name="password" id="password" placeholder="Secret!" required="required" maxlength="20"/>
-       </p>
+  <form action="https://formsubmit.co/workwithomama@gmail.com" method="post">
 
-       <p>
-        <label for="confirm-password">Confirm Password: </label> <br/>
-        <input type="password" name="confirm-password" id="confirm-password" placeholder="Rewrite password" required="required" maxlength="20" />
-       </p>
+    <!-- For First Name -->
+    <p>
+      <label for="firstname">First Name: </label> <br />
+      <input type="text" name="firstname" id="firstname" placeholder="John" autocomplete="on" required="required"
+        maxlength="10" />
+    </p>
 
-       <p>
-        <label for="date-of-birth">Date of Birth: </label> <br/>
-        <input type="date" name="date-of-birth" id="date-of-birth" required="required">
+    <!-- For Last Name -->
+    <p>
+      <label for="lastname">Last Name: </label> <br />
+      <input type="text" name="lastname" id="lastname" placeholder="Wick" autocomplete="on" required="required"
+        maxlength="10" />
+    </p>
 
-       </p>
+    <!-- For Email -->
+    <p>
+      <label for="email">Email: </label> <br />
+      <input type="email" name="email" id="email" placeholder="Johnwick@gmail.com" required="required" maxlength="20"
+        size="20" />
+    </p>
 
-       <p>
-        <label for="phone">Phone No: </label> <br/>
-        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0]{1}[0-9]{3}[0-9]{7}">
-       </p>
-       
-       <p>Gender: <br/> 
-       <input type="radio" name="gender" value="female" id="female" /><label for="female">Female</label>
-       <input type="radio" name="gender" value="male" id="male"/><label for="male"> Male </label>
-       <input type="radio" name="gender" value="other" id="other"/><label for="other"> Other </label>
-      </p>
+    <!-- For Password -->
+    <p>
+      <label for="password">Password: </label> <br />
+      <input type="password" name="password" id="password" placeholder="Secret!" required="required" maxlength="20" />
+    </p>
 
+    <!-- For Confirm Password -->
+    <p>
+      <label for="confirm-password">Confirm Password: </label> <br />
+      <input type="password" name="confirm-password" id="confirm-password" placeholder="Rewrite password"
+        required="required" maxlength="20" />
+    </p>
+
+    <!-- For Date Of Birth -->
+    <p>
+      <label for="date-of-birth">Date of Birth: </label> <br />
+      <input type="date" name="date-of-birth" id="date-of-birth" required="required">
+
+    </p>
+
+    <!-- For Phone Number -->
+    <p>
+      <label for="phone">Phone No: </label> <br />
+      <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0]{1}[0-9]{3}[0-9]{7}">
+    </p>
+
+    <!-- For Gender -->
+    <p>Gender: <br />
+      <input type="radio" name="gender" value="female" id="female" /><label for="female">Female</label>
+      <input type="radio" name="gender" value="male" id="male" /><label for="male"> Male </label>
+      <input type="radio" name="gender" value="other" id="other" /><label for="other"> Other </label>
+    </p>
+
+    <!-- For Photo -->
+    <p>
+      <label for="photo">Insert Your Photo:</label> <br />
+      <input name="photo" id="photo" type="file" name="user-image" />
+    </p>
+
+    <!-- For Resume -->
+    <p>
+      <label for="resume">Insert Your Resume:</label> <br />
+      <input name="resume" id="resume" type="file" name="user-image" />
+    </p>
+
+    <!-- For Security Question -->
+    <p>
+      <label for="security-questions">Security Questions</label> <br />
+      <select name="security-questions" id="security-questions">
+        <option value="favourite-childhood-pet">What was the name of Your Favourite Childhood pet?</option>
+        <option value="skin-color">What is your skin color?</option>
+        <option value="favourite-sport">What is Favourite sport?</option>
+      </select>
+      <br><br>
+      <textarea id="security-answer" name="security-answer" rows="3"
+        cols="32">Enter the answer of the above question here!</textarea>
+    </p>
+
+    <!-- For Terms And Condition -->
+    <p>
+      <input type="checkbox" name="Terms" value="agree" required="required">
+      I agree with terms and conditions.
+    </p>
+
+    <!-- For Submit -->
+    <input type="submit" name="register" value="Register">
+  </form>
+
+  <hr />
+
+  <!-- Personal Detail Form -->
+
+  <form action="https://formsubmit.co/workwithomama@gmail.com" method="post">
+
+    <fieldset>
+
+      <legend>
+        <h2>Personal Details</h2>
+      </legend>
+
+      <!-- For First Name -->
       <p>
-        <label for="photo">Insert Your Photo:</label> <br/>
-        <input   name="photo" id="photo" type="file" name="user-image" />
+        <label for="first-name">First Name:</label><br>
+        <input type="text" name="first-name" id="first-name" maxlength="20" size="20" required placeholder="Tom">
       </p>
 
+      <!-- For Last Nmae -->
       <p>
-        <label for="resume">Insert Your Resume:</label> <br/>
-        <input name="resume" id="resume" type="file" name="user-image" />
+        <label for="last-name">Name:</label><br>
+        <input type="text" name="last-name" id="last-name" maxlength="20" size="20" required placeholder="Hiddleston">
       </p>
 
+      <!-- For Gender -->
       <p>
-        <label for="security-questions">Security Questions</label> <br/>
-        <select name="security-questions" id="security-questions">
-          <option value="favourite-childhood-pet">What was the name of Your Favourite Childhood pet?</option>
-          <option value="skin-color">What is your skin color?</option>
-          <option value="favourite-sport">What is Favourite sport?</option>
-        </select>
-        <br><br>
-        <textarea id="security-answer" name="security-answer" rows="3" cols="32">Enter the answer of the above question here!</textarea>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male" id="male" required><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
       </p>
 
-      <p>     
-        <input type="checkbox" name="Terms" value="agree" required="required">
-        I agree with terms and conditions.
+      <!-- For Email -->
+      <p>
+        <label for="email">Email: </label> <br />
+        <input type="email" name="email" id="email" placeholder="tomhiddelson@gmail.com" required="required"
+          maxlength="20" size="20" />
       </p>
 
-      <input type="submit" name="register" value="Register">
-    </form>
+      <!-- For Date of Birth -->
+      <p>
+        <label for="birth-date">Date of Birth:</label><br>
+        <input type="date" name="birth-date" id="birth-date" required>
+      </p>
 
-  </body>
+      <!-- For Security Question -->
+      <label for="address">Address:</label><br>
+      <!-- Text area for answer -->
+      <p>
+        <textarea name="address" id="address" cols="40" rows="6"
+          placeholder="Enter the address where you live"></textarea>
+      </p>
+      <!-- For Submit button -->
+      <button type="submit" name="submit">Submit</button>
+    </fieldset>
+
+  </form>
+
+</body>
+
 </html>
