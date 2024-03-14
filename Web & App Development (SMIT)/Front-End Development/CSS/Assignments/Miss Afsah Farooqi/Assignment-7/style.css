@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Header */
+
+header{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.heading{
+    font-size: 38px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Main */
+
+/* Periodic Table */
+
+div.periodic-table-box{
+    width: 90%;
+    margin: 2% auto;
+}
+
+table.periodic-table{
+    border-spacing: 6px;
+    empty-cells: hide;
+}
+
+/* Each Table Data */
+table.periodic-table td{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/* Different Element box*/
+td.non-metal-element{
+    border: 3px solid #FFF79A;
+}
+
+td.noble-gas-element{
+    border: 3px solid #CAEBF4;
+}
+
+td.alkali-metal-element{
+    border: 3px solid #FDD893;
+}
+
+td.alkaline-earth-metal-element{
+    border: 3px solid #CBA090;
+}
+
+td.metalloid-element{
+    border: 3px solid #ABBCC0;
+}
+
+td.halogen-element{
+    border: 3px solid #D3E397;
+}
+
+td.transition-metal-element{
+    border: 3px solid #FAD5E6;
+}
+
+td.lanthanide-element{
+    border: 3px solid #98CDDD;
+}
+
+td.antinode-element{
+    border: 3px solid #98E8C8;
+}
+
+td.post-transition-metal-element{
+    border: 3px solid #CBC3DE;
+}
+
+td.unknown-property{
+    border: 3px solid #CDF3F2;
+}
+
+/* Each Element Number of the table Data */
+div.element-num{
+    margin-bottom:-4px;
+    margin-left: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    color: grey;
+}
+
+/* Each Headings of Table Data */
+div.element{
+    width: 80%;
+    height: 80%;
+    margin: 0px auto 4px  auto;
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* Different Element Circle */
+td.non-metal-element div.element{
+    background-color: #FFF79A;
+}
+
+td.noble-gas-element div.element{
+    background-color: #CAEBF4;
+}
+
+td.alkali-metal-element div.element{
+    background-color: #FDD893;
+}
+
+td.alkaline-earth-metal-element div.element{
+    background-color: #CBA090;
+}
+
+td.metalloid-element div.element{
+    background-color: #ABBCC0;
+}
+
+td.halogen-element div.element{
+    background-color: #D3E397;
+}
+
+td.transition-metal-element div.element{
+    background-color:  #FAD5E6;
+}
+td.post-transition-metal-element div.element{
+    background-color:  #CBC3DE;
+}
+td.lanthanide-element div.element{
+    background-color: #98CDDD;
+}
+td.antinode-element div.element{
+    background-color: #98E8C8;
+}
+td.unknown-property div.element{
+    background-color: #CDF3F2;
+}
+
+/* Headings of the table data */
+div.element p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+}
