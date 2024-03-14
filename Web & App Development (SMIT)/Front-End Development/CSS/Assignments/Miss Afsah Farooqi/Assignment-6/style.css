@@ -27,8 +27,6 @@ div.header h1{
     width: 70%;
     margin: 3%  auto;
     padding: 2% 3%;
-    /* display: flex;
-    align-items: center; */
 }
 
 
@@ -36,6 +34,8 @@ div.header h1{
     border: 3px solid #88CE65;
     width: 72%;
 }
+
+/* Image */
 
 div.image{
     display: inline-block;
@@ -55,7 +55,7 @@ div.detail{
     width: 67%;
 }
 
-
+/* Name */
 h2.name{
     margin: 0%;
     font-size: 2rem;
@@ -64,16 +64,19 @@ h2.name{
     text-transform: uppercase;
 }
 
+/* Posititon */
 p.position{
     font-style: oblique;
     width: fit-content;
 }
 
+/* Position Hover */
 p.position:hover{
     color: #88CE65;
     text-decoration: 2px underline solid;
 }
 
+/* Positon and Bio */
 p.position , p.bio{
     margin:  2% 0%;
     font-size: 1.2rem;
