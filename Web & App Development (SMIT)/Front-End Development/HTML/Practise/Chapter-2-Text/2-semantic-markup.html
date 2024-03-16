@@ -1,0 +1,78 @@
+<!-- Chapter 2 : Semantic Markup
+
+Semantic Markup: These Element is used to add extra meaning about the content of the website.
+
+Element strong, Emphasis, Blockquote, Quote, Abbreviations, Cite, Definations, Address, Insert & Delete : 
+Attribute: Tiltle, Cite-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Text</title>
+</head>
+
+<body>
+
+    <!-- Strong :The use of the <strong> element indicates the browsers that its content has strong importance.The contents of a <strong> element in bold. -->
+    <!-- Emphasis :The use of the <em> element indicates the browsers emphasis that subtly change the meaning of the sentence.The contents of a <strong> element in italic.-->
+
+    <p><strong>Beware:</strong> Pickpockets operate in
+        this area.</p>
+    <p>I <em>think</em> Ivy was the first.</p>
+
+    <hr />
+
+    <!-- Quotations -->
+    <!-- Block Quote: The <blockquote> element is used for longer quotes that take up an entire paragraph.-->
+    <!-- Quotes: The <q> element is used for shorter quotes that sit within a paragraph. Browsers are supposed to put quotes around. -->
+    <!-- Cite: This attribute to indicate where the quote is from. -->
+    
+    <blockquote cite="https://www.inspireyoursuccess.com/gary-vaynerchuk-quotes/">
+        <p>Time – the one asset none of us are ever gonna get more of. - Gary Vaymerchuk</p>
+    </blockquote>
+
+    <p>Ankur Warikoo - Do Epic Shit<q cite="https://www.goodreads.com/author/quotes/20936663.Ankur_Warikoo?page=2">
+        Your kindness might cause you pain, a sense of betrayal, heartburn. Be kind anyway.
+    </q></p>
+
+    <hr/>
+
+    <!-- Abbreviations: The <abbr> element is used for an abbreviation or
+    an acronym -->
+    <!-- Title: To spell out the full form of the abbrivation, the title attribute was used with the abbr -->
+    <p><abbr title="Professor">Prof</abbr> Stephen
+        Hawking is a theoretical physicist and
+        cosmologist.</p>
+       <p><abbr title="National Aeronautics and Space
+        Administration">NASA</abbr> do some crazy
+        space stuff.</p>
+
+    <hr />
+
+    <!-- Cite: When you are referencing a piece of work such as a book, the <cite> element can be used to indicate where the citation is from.-->
+    <!-- Defination: The first time you explain some new terminology in a document, it is known as the defining-->
+
+    <p><cite>A Brief History of Time</cite> by Stephen
+        Hawking has sold over ten million copies
+        worldwide.</p>
+    <p>A <dfn>black hole</dfn> is a region of space from
+        which nothing, not even light, can escape.</p>
+    
+    <hr/>
+    <!-- Address: The <address> element has quite a specific use: to contain contact details for the author of the page. -->
+    <address>
+        <p>
+            <a href="mailto:workwithomama@gmail.com">workwithomama@gmail.com</a>
+        </p>
+        <p>Gulstan-e-Johar Block 17, Noman Grand City near City Backery</p>
+    </address>
+
+    <hr/>
+    <!-- Insert & Delete: The <ins> element can be used to show content that has been inserted into a document, the <del> element can show text that has been deleted from it. -->
+    <p>It was the <del>worst</del> <ins>best</ins> idea
+        she had ever had.</p>
+    
+</body>
+</html>
