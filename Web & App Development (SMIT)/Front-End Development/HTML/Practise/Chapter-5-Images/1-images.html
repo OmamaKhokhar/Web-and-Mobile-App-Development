@@ -1,0 +1,82 @@
+<!-- Chapter 5 : Images
+
+Images:
+There are several things to consider when selecting and
+preparing images for your site which include an image in your web pages using HTML
+● Pick which image format to use
+● Show an image at the right size
+● Optimize an image for use on the web to make pages load faster
+
+Element : img
+Attribute: src, alt ,title ,width , height -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Images</title>
+</head>
+<body>
+
+    <!-- image: To add an image into the page you need to use an <img> element. This is an empty element -->
+
+    <!-- src: This tells the browser where it can find the image file. This will usually be a relative URL pointing to an image on your own site.-->
+    <!-- alt: This provides a text description of the image which describes the image if you cannot see it.It should give an accurate description of the image content -->
+    <!-- title: You can also use the title attribute with the <img> element to provide additional information about the image. Most browsers will display the content of this attribute in a tootip when the user hovers over the image. -->
+    <!-- height & width: This specifies the height and width of the image in pixels.-->
+
+    <!-- Browsers show HTML elements in one of two ways: 
+    Block Level element: Block elements always appear on a new line. Examples of block elements include the <h1> and <p> element
+    Inline Level Element: Inline elements sit within a block level element and do not start on a new line. Examples of inline elements include the <b>, <em>, and <img> elements.-->
+
+    <!-- Format:
+    JPEG: Whenever you have many different colors in a picture you should use a JPEG.
+    GIF & PNG: Use GIF or PNG format when saving images with few colors or large areas of the same color.-->
+
+    <!-- Figure: This element contain images and their caption using fig caption so that the two are associated. You can have more than one image inside the <figure> element as long as they all share the same caption -->
+
+    <h1>Pakistan</h1>
+    <img src="assets/images/pakistan-flag.png" alt="The Flag of Islamic Republic Pakistan">
+
+    <hr/>
+    <h2>Administrative units of Pakistan</h2>
+    <p>The administrative units of Pakistan comprise four provinces, one federal territory: the provinces of Punjab, Sindh, Khyber Pakhtunkhwa, and Balochistan; the Islamabad Capital Territory.</p>
+
+    <br/>
+
+    <!-- Provinces -->
+    <h3>Sindh</h3>
+    <figure>
+        <img src="assets/images/Mazar-e-quaid.JPG" alt="Mazar-e-Quaid" width="200px">
+        <figcaption>Mazar-e-Quaid - Karachi, Sindh</figcaption>
+    </figure>
+
+    <h3>Punjab</h3>
+    <figure>
+        <img src="assets/images/Badshahi-mosque.jpg" alt="Badshahi-Mosque" width="200px">
+        <figcaption>Badshahi-Mosque - Lahore, Punjab</figcaption>
+    </figure>
+
+    <h3>Balochistan</h3>
+    <figure> 
+        <img src="assets/images/Quaid-e-Azam_Residancy.jpg" alt="Quaid-e-AzamResidancy" width="200px">
+        <figcaption>Quaid-e-Azam Residancy - Ziarat, Balochistan</figcaption>
+    </figure>
+
+    <h3>Khyber Pakhtunkhwa</h3>
+    <figure>
+        <img src="assets/images/Saif_ul_malook_lake.jpg" alt="Saif-ul-Malook" width="200px">
+        <figcaption>Saif-ul-Malook - Mansehra district, Khyber Pakhtunkhwa</figcaption>
+    </figure>
+
+    <!-- Federal Territory -->
+    <h3>Islamabad</h3>
+    <figure>
+        <img src="assets/images/Supreme_Court_of_Pakistan_Islamabad.jpg" alt="Supreme Court of Pakistan" width="200px">
+        <figcaption>Supreme Court of Pakistan - Red Zone, Islamabad</figcaption>
+    </figure>
+
+</body>
+</html>
