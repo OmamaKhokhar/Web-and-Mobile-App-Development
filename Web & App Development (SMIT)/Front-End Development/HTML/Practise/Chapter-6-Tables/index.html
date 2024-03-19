@@ -1,0 +1,68 @@
+<!-- Chapter 6 : Tables
+
+Tables: Tables in HTML are structured grids that allow organizing and presenting data in rows and columns.
+
+Element : table ,thead ,tboady ,tfoot ,th , tr, td 
+Attribute: scope, colspan ,rowspan -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Tables</title>
+</head>
+
+<body>
+
+    <!--table :A <table> element is used to create a table in HTML. It serves as the container for all the content within the table, including the header, body, and footer.
+
+    thead: The <thead> element defines the header section of a table. It contains one or more rows of table header cells (<th> elements).
+    tbody: The <tbody> element defines the body section of a table. It contains one or more rows of table data cells (<td> elements).
+    tfoot: The <tfoot> element defines the footer section of a table. It contains one or more rows of table footer cells (<td> elements).
+
+    tr: The <tr> element defines a row in a table.
+    td: The <td> element defines a data cell in a table. It represents data within a row of the table.
+    th: The <th> element is used to represent the heading for either a column or a row. The th stands for table heading.
+
+    scope: The scope attribute used to specifies the set of data cells for which the current header cell provides header information.
+    colspan: The colspan attribute specifies the number of columns a table cell should span. It allows cells to stretch across multiple columns horizontally.
+    rowspan: The rowspan attribute specifies the number of rows a table cell should span. It enables cells to stretch across multiple rows vertically.-->
+
+    <table>
+
+        <thead>
+            <!-- Politician Names -->
+            <tr>
+                <th></th>
+                <th scope="col">Narendra Modi (India)</th>
+                <th scope="col">Shinzo Abe (Japan)</th>
+                <th scope="col">Lee Hsien Loong (Singapore)</th>
+                <th scope="col">Sheikh Hasina (Bangladesh)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Tenure -->
+            <tr>
+                <th scope="row">Longest serving</th>
+                <td>2 times Prime Minister (2014)</td>
+                <td>2 times Prime Minister (2012)</td>
+                <td>4 times Prime Minister (2004)</td>
+                <td>4 times Prime Minister (2009)</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="4">More Comming Soom!!</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+
+</html>
