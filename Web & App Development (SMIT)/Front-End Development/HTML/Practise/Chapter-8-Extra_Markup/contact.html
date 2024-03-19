@@ -1,0 +1,63 @@
+<!-- Chapter 8 : Extra Markup -->
+
+<!-- Meta Element: <meta> is used to provide metadata about the HTML document.
+where the name attribute indicates an intention to specify a description for the page. The content attribute is where this description is actually specified such as author, description, keywords, etc. -->
+
+<!-- Global and Local Attributes:
+Global attributes can be used on any HTML element, such as id, class, etc.
+Local attributes are specific to certain elements, such as href for <a> elements, src for <img> elements, etc. -->
+
+<!-- Block Level & Inline Elements:
+Block-level elements start on a new line and occupy the full width available. Examples include <div>, <p>, <h1>.
+Inline elements do not start on a new line and only occupy the space bounded by the tags. Examples include <span>, <a>, <strong>. -->
+
+<!-- Div and Span:
+<div> is a block-level element used to group other elements and apply styling.
+<span> is an inline element used to apply styling to specific portions of text or inline elements. -->
+
+<!-- Iframe Element: <iframe> is used to embed another HTML document within the current document.
+The attrinutes are Width, Height, src and seamless.
+Seamless: In HTML5, seamless can be applied to an iframe where scrollbars are not desired. -->
+
+<!--Escape Character in Code: Characters like <, >, & have special meanings in HTML and need to be escaped using entities like &lt;, &gt;, &amp; to display them correctly in the document. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telephone, email
+    and directions for The Foxiee, Karachi, Pakistan" />
+    <title>Chapter 8: Extra Markup</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Foxiee</h1>
+        <ul>
+            <li><a href="con.html">home</a></li>
+            <li><a href="shoping.html">Fox Jacket Collection</a></li>
+            <li class="current-page"><a href="contact.html">contact</a> </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <p>Main Rashid Minhas Rd، opp. UBL Sports Complex, Karachi, Pakistan</p>
+        <p><span class="contact">Telephone</span>
+            0207 946 0946</p>
+        <p><span class="contact">Email</span>
+            <a href="mailto:foxiee@gmail.com">
+                foxiee@gmail.com</a>
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.991559855894!2d67.08468887446406!3d24.932357442378603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f4eb7183b97%3A0x35709df45c0003aa!2sLucky%20One%20Mall!5e0!3m2!1sen!2s!4v1710879329657!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <p>&copy;Foxiee</p>
+
+</body>
+</html>
