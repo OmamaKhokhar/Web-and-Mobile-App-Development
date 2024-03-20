@@ -2,36 +2,37 @@
 
 Foreground Colors: The color property allows user to specify the color of text inside the element.  */
 
+/* Rule Set for Body Element (Main parent) */
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+} 
 
-/* Color Names */
-h1{
-    color: whitesmoke;
-}
-
-/* #HEX Value */
-h2{
-    color: #ffff;
-}
-
-/* RGB Value */
-p{
-    color: rgb(100, 100, 90);
-}
-
-/* Backround Color: CSS treat each element like a box and this property sets the background color*/
+/* Color Decleration by different Values or Method*/
 
 body{
-    background-color: rgb(200,200,200);
-}
-
-h1{
-    background-color: Darkcyan;
+    /* Basic Color Names: Uses a predefined color name . CSS has 140+ color pallete */
+    background: whitesmoke;
 }
 
 h2{
-    background-color: #ee3e80;
+    /* RGB Color Codes:Each parameter corresponds to the intensity of RGB in the color respectively, with values ranging from 0 to 255. */
+     color:  rgb(2, 41, 100);
 }
 
 p{
-    background-color: white;
+    /* RGBA color Codes: Similar to RGB, but with an additional parameter for alpha (transparency),ranging from 0 (transparent) to 1 (opaque). */
+    color: rgba(2, 41, 100, 0.8);
+}
+
+h1{
+    /* HSL Color Code: 
+    First Value is Hue: Represents the type of color on the color wheel.
+    Ranges from 0 to 359 degrees.
+    Second Value is Saturation: Refers to the intensity or purity of the color.
+    Ranges from 0% (grayscale) to 100% (fully saturated) 
+    Third Value is Lighteness: Represents the brightness of the color.
+    Ranges from 0% (black) to 100% (white). */
+    color: hsl(216, 92%, 14%);
 }

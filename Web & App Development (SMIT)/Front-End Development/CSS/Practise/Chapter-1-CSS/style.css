@@ -1,0 +1,57 @@
+/* CSS Style Rule with html Elements: CSS works by associating rules with HTML elements.A CSS rule contains two parts: a selector and a declaration::
+
+Selectors: It indicate which element the rule applies to.
+
+Declarations: It indicate how the elements referred in the selector should be styled. Declarations are split into two parts:
+Properties: It indicate the aspects of the element you want to change.
+Values: It specify the settings you want to use for the chosen properties.These are separated by commas. */
+
+/* Flow of CSS Rule:
+LAST RULE: If two selectors are identical, the latter takes precedence.
+SPECIFICITY: More specific selectors take precedence over more general ones.!IMPORTANT: Adding !important after a property value indicates it should be considered more important than other rules. */
+
+/* Inheritance: Property values of parent elements are automatically passed down to their child elements, simplifying styling.
+Font-family and color properties inherit to child elements, simplifying styles, while background-color and border properties do not, preventing clutter. */
+
+/* There are many different types of CSS selector that allow you to target rules to specific elements.yYou can target more than one elements: */
+
+
+/* Universal Selectors: It Targets all elements on the page */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Type Selector: Targets the matches element name and you can target more than one elements*/
+h1 , h2 {
+    color: brown;
+}
+
+/* ID Selector: Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol. */
+#top , #introduction{
+    background-color: blanchedalmond;
+}
+
+/* Class Selector: Targets an element whose class attribute has a value that matches the one specified after the full stop symbol. */
+.note{
+    background-color: beige;
+}
+
+/* Child Selector: Target an element a direct child of specified element. */
+ul > li{
+    font-style: italic;
+}
+
+/* Descendant Selector: Targets an element that is a descendant of specified element (not just a direct child of that element). */
+ul a{
+    color: aqua;
+}
+
+/* Adjacent Sibling Selector: Targets an element that is the next sibling of a specified element.*/
+h2 + p{
+    font-weight: 600;
+}
+
+/* General Sibling Selector: Targets an element that is a sibling of another, although it does not have to be the directly preceding element. */
+h2 ~ p{
+    font-family: 'Times New Roman', Times, serif;
+}
