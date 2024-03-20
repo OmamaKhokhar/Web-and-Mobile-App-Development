@@ -1,19 +1,13 @@
 /* Chapter 2 : Colors 
 
-Foreground Colors: The color property allows user to specify the color of text inside the element.  */
-
-/* Rule Set for Body Element (Main parent) */
-body{
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-} 
+Foreground Colors: The color property allows to specify the color of text inside the element.
+Backgroung-colors: This Property sets the color of the background for HTML Element box. By default the color is transparent. */
 
 /* Color Decleration by different Values or Method*/
 
 body{
     /* Basic Color Names: Uses a predefined color name . CSS has 140+ color pallete */
-    background: whitesmoke;
+    background-color: whitesmoke;
 }
 
 h2{
@@ -28,11 +22,16 @@ p{
 
 h1{
     /* HSL Color Code: 
-    First Value is Hue: Represents the type of color on the color wheel.
+    First Value is Hue: Represents the type of color on the color wheel. Hue is the root color of any color. It disregards any value or saturation. 
     Ranges from 0 to 359 degrees.
-    Second Value is Saturation: Refers to the intensity or purity of the color.
+    Second Value is Saturation: Saturation refers to the amount of gray in a color. 
     Ranges from 0% (grayscale) to 100% (fully saturated) 
     Third Value is Lighteness: Represents the brightness of the color.
     Ranges from 0% (black) to 100% (white). */
     color: hsl(216, 92%, 14%);
+
+    /* HSLA: The hsla color property allows you to specify color properties using hue, saturation, and lightness as above, and adds a fourth value which represents transparency.*/
+    
+    /*Opacity: This property allows you to specify the opacity or transparency of an element. Which ranges from 0.0 to 1.0. It Also knowns as alpha. Now it is added with RGB and HSL which  RGBA and HSLA. */
+    opacity: 0.5;
 }
