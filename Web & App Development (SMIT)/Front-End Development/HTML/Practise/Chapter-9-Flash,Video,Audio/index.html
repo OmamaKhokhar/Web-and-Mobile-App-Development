@@ -1,0 +1,48 @@
+<!-- Chapter 9 : Flash, Video, Audio -->
+
+<!-- <Video> Element : This element is used to add video in to the html document.These video is host on yur site and you can also embeded viseo from youtube. -->
+<!-- <audio> Element : This element is used to add audio in to the html document. -->
+
+<!-- src: Specifies the path to the video file.
+poster: Allows specifying an image to display while the video is loading or until the user initiates playback.
+width, height: Specifies the dimensions of the video player in pixels.
+controls: Indicates that the browser should provide its own controls for video playback.
+autoplay: Specifies that the video should start playing automatically when the page loads.
+loop: Indicates that the video should start playing again automatically once it has ended.
+preload: Determines how the browser should handle video loading when the page loads. It can have values "none" (don't preload), "auto" (preload when the page loads), or "metadata" (preload video metadata only).-->
+
+<!-- <source> element:The <source> element within <video> specifies video file locations and formats, crucial for compatibility and efficient loading.
+src: Specifies the path to the video file.
+type: Informs the browser of the video file format.`
+codecs: Indicates the codec used to encode the video, supplied within the type attribute. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telephone, email
+    and directions for The Foxiee, Karachi, Pakistan" />
+    <title>Chapter 9: Video & Audio</title>
+</head>
+
+<body>
+
+    <!--Header With Video -->
+    <div class="header">
+        <video autoplay muted loop width="100%" preload="auto">
+            <source src="https://static.videezy.com/system/resources/previews/000/018/790/original/Komp_1.mp4" type="video/
+            mp4">
+        </video>
+    </div>
+
+    <!-- For Audio -->
+    <div class="audio">
+        <audio preload="auto" controls>
+            <source src="https://audio-previews.elements.envatousercontent.com/files/281313173/preview.mp3?response-content-disposition=attachment%3B+filename%3D%22UPA6GE2-rain.mp3%22" type="audio/mp3">
+        </audio>
+    </div>
+    
+</body>
+</html>
