@@ -1,0 +1,73 @@
+/* Style For All Page */
+
+/* Body */
+body{
+    background-color: rgb(255, 255, 206);
+}
+
+/* Header */
+
+#header{
+    text-align: center;
+    color: #846e51;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#header h1{
+    text-shadow: 1px 2px 1.5px #000000;
+}
+
+#header p{
+    color: #33291d;
+    letter-spacing: 1.5px;
+}
+
+/* Detail */
+.detail p >strong{
+    color: #33291d;
+}
+
+/* List and Link  */
+li , a:link{
+    color: #846e51;
+}
+
+a:visited{
+    color: #33291d;
+}
+
+li:active , a:active{
+    color: #000000;
+}
+
+
+/* Menu, contact, location section Headings */
+h2{
+    color: #33291d;
+    text-decoration: underline solid black  1px ;
+}
+
+/* Contact Form */
+label ,textarea{
+    color: #846e51;
+    font-size: 18px;
+}
+ 
+input{ 
+    border: 1.5px solid #33291d ;
+    background-color: #fff9ef;
+    color: rgb(17, 16, 16);
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    color: #846e51;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style For Upcomming Recipe Page */
+h2.comming{
+    text-align: center;
+    text-decoration: none;
+}
