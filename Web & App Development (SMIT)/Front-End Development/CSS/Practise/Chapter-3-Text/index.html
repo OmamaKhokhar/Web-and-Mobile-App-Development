@@ -1,7 +1,12 @@
 <!-- Chapter 3: Text
-It includes: -->
+It includes: 
+According to fonts: Typeface of text, Size, Bold , Italics, Capitals, underlines.
+Others (Doesnot Depend on fonts):
+Colours, Spacing between the lines, words and Letters, Text indent, Text Align.
+Vertical Align and Pseudo-elements and  pseudo-classes-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +15,143 @@ It includes: -->
     <title>Chapter 3: Text</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
-    
+
     <header>
         <h1>CSS Text</h1>
     </header>
+
+    <main>
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <a href="#typeface"><li>Specifying the Type Face</li></a>
+                <a href="#font-styling"><li>Font Styling</li></a>
+                <a href="#font-size"><li>Font Size</li></a>
+                <a href="#text-properties"><li>Text Properties</li></a>
+                <a href="#vertical-align"><li>Vertical Align</li></a>
+                <a href="#pseudo"><li>Pseudo elements and Pseudo-classes.</li></a>
+            </ul>
+        </div>
+
+
+        <!-- Type Face -->
+        <div id="#typeface">
+            <!-- Different TypeFace Terminology -->
+            <h2>TypeFace Terminology:</h2>
+            <dl>
+
+                <!-- Serif TypeFace -->
+                <dt class="serif">Serif: </dt>
+                <dd> Serif fonts have extra details on the ends of the main strokes of the letters, known as serifs.
+                </dd>
+
+
+                <!-- Sans-Serif TypeFace-->
+                <dt class="sansserif">Sans-Serif:</dt>
+                <dd>
+                    Sans-serif fonts have straight ends to letters, presenting a cleaner design compared to serif fonts.
+                </dd>
+
+
+                <!-- Monospace TypeFace -->
+                <dt class="monospace">Monospace:</dt>
+                <dd>In monospace fonts, every letter occupies the same width, providing uniformity in alignment.</dd>
+
+
+                <!-- Cursive TypeFace -->
+                <dt class="cursive">Cursive:</dt>
+                <dd>
+                    Cursive Fonts allows handwritting style with joinning strokes.
+                </dd>
+
+
+                <!-- Fantasy TypeFace -->
+                <dt class="fantasy">Fantasy:</dt>
+                <dd>
+                    Fantasy Font allows decorative font often used for titles.
+                </dd>
+
+
+            </dl>
+        </div>
+
+        <hr/>
+        
+        <!-- Font Styling -->
+        <div id="#font-styling">
+
+            <!-- Font styling -->
+            <h2>Font Styling</h2>
+            <dl>
+                <!-- Font Weight -->
+                <dt class="font-weight">Font Weight:</dt>
+                <dd>
+                    The font-weight allows you to create bold text.
+                </dd>
+
+                <!-- Font Style -->
+                <dt class="font-style">Font Style:</dt>
+                <dd>The Font style allows you to alter the appearence of the text like <span class="oblique">Oblique</span> and <span class="italic">Italic</span></dd>
+            </dl>
+        </div>
+
+        <hr/>
+
+        <div id="font-size">
+            
+            <!-- Font Size -->
+            <h2>Font Size</h2>
+
+            <p class="px">16px is Font Size of te Parent Element</p>
+            <p class="percentage">200% of the Parent Element </p>
+            <p class="em">2em of the parent element</p>
+            <p class="rem">5rem of the parent element</p>
+        </div>
+
+        <hr/>
+
+        <!--Text Properties: Text Transform, Text decoration , Text Indent, Text Align, Text Shadow, Line Height, Word and Letter Spacing,  -->
+        <div id="text-properties">
+
+        <h1 class="heading">Briards</h1>
+		<p class="credits">by Ivy Duckett</p>
+
+		<p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/Briard">briard</a>, or berger de brie, is a large breed of dog traditionally used as a herder and guardian of sheep.</p>
+
+		<h2 class="breed-history">Breed History</h2>
+		<p>The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+        
+        </div>
+
+
+        <hr/>
+
+        <!-- Verticle Align -->
+        <div id="verticle-align">
+            <h2>Verticle Align</h2>
+            <img src="assets/Images/Flag_of_palestine.jpg" alt="Flag of Palestine" width="150px">
+            <span>Flag Of Palestine</span>
+        </div>
+
+        <hr/>
+
+        <!-- Pseudo-element & Pseudo-class-->
+        <div id="pseudo">
+
+            <h3>Want to join <a href="https://en.wikipedia.org/wiki/Pakistan_Army">Pak Army</a></h3>
+            <p>Type "YES" or "NO"</p>
+
+            <label for="answer">Answer: </label>
+            <input type="text" name="answer" id="answer" placeholder="YES or NO" maxlength="3" minlength="2" required>
+            <br/>
+            <br/>
+            <button>Submit</button>
+
+        </div>
+    </main>
 
 </body>
 </html>

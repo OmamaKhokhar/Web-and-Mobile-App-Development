@@ -1,1 +1,213 @@
+/* Text:*/
+
+ 
+/* Fonts 
+Two ways to use fonts:
+Using Installed Fonts
+Using Downloaded Fonts with @font-face 
+
+Specifying the font:
+fontfamily: font-family property in CSS allows designers to specify the typeface that should be used for any text inside the element(s) to which a CSS rule applies,  with fallback options for broader compatibility 
+Font Stacks: The concept of font stacks to specify multiple typefaces in order of preference.*/
+
+@font-face{
+    font-family: "caveat-bold";
+    src: url(assets/Caveat-Font-Family/Caveat-Bold.ttf)
+        format("truetype");
+}
+
+@font-face {
+    font-family: "caveat-medium";
+    src: url(assets/Caveat-Font-Family/Caveat-Medium.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: "caveat-semibold";
+    src: url(assets/Caveat-Font-Family/Caveat-SemiBold.ttf);
+}
+
+header{
+    font-family: "caveat-bold";
+}
+
+
+/* Type Face */
+div.typeface > h2{
+    font-family: "caveat-semibold";
+}
+
+.serif , .serif + dd{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sansserif, .sansserif + dd{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.monospace , .monospace + dd{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Font Styling */
+
+div.font-style > h2{
+    font-family: "caveat-semibold";
+}
+
+/* Font Weight: The font-weight property allows you to create bold text*/
+dt.font-weight{
+    font-weight: 700;
+}
+
+/* Font Style: The font-style property allows the text to appear italic and oblique. */
+
+dt.font-style{
+    font-style: italic;
+}
+span.oblique{
+    font-style: oblique;
+}
+
+span.italic{
+    font-style: italic;
+}
+
+
+/* Font Size: The font-size property enables you to specify a size for the font. There are several ways to specify the size of a font.*/
+
+
+/* Pexels: Pixels are relative to the screen resolution, meaning the same font size may appear differently on screens with varying resolutions. */
+p.px{
+    font-size: 16px;
+}
+
+/* Percentage: Percentages are relative to the parent element's font size. */
+p.percentage{
+    font-size: 200%;
+}
+
+/* em: Ems are relative to the font size of the parent element. */
+p.em{
+    font-size: 2em;
+}
+
+/* rem: REM stands for "root em" and is relative to the font size of the root element (<html>). */
+p.rem{
+    font-size: 5rem;
+}
+
+/* Text Properties */
+
+/* Text Transform: The text-transform property is used to change the case of text */
+/* Uppercase: This causes the text to appear uppercase 
+Lowercase: This causes the text to appear lowercase. 
+Capitalize: This causes the first letter of each word to appear capitalized. */
+h1.heading{
+    text-transform: uppercase;
+}
+
+p.credits{
+    text-transform: capitalize;
+}
+h2.breed-history{
+    text-transform: lowercase;
+}
+
+
+/* Text Decoration: The text-decoration property allows you to specify various decorations for text */
+/* None: Removes any decoration already applied to the text /
+/ Underline: Adds a line underneath the text /
+/ Overline: Adds a line over the top of the text /
+/ Line-through: Adds a line through words */
+a.breed{
+    text-decoration: none;
+}
+
+
+/* Leading Line Height:  The line-height property in CSS sets the height of an entire line of text. Leading refers to the vertical space between lines of text and is measured from the bottom of the descender on one line to the top of the ascender on the next. */
+
+div#text-properties > p{
+ line-height: 1.4em;
+}
+
+/* Letter Spacingand Word Spacing:
+Kerning refers to the space between each letter, and it can be adjusted using the letter-spacing property. It is beneficial for all-uppercase text
+Word spacing can be controlled using the word-spacing property*/
+
+h1.heading, h2.breed-history {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;}
+p.credits {
+    font-weight: bold;
+    word-spacing: 0.5em;}
+
+
+/* Text Align: Text Alignment: The text-align property allows you to control the alignment of text, offering options for left, right, center, and justify alignments. Left alignment is typically preferred for readability, while justified text can result in uneven word spacing*/
+
+h1.heading {
+    text-align: left;
+}
+div#text-properties > p {
+    text-align: justify;
+}
+p.credits {
+    text-align: right;
+}
+
+/* Text Indent: The text-indent property allows you to indent the first line of text within an element, typically specified in pixels or ems. It can also take negative values, useful for pushing text off-screen. */
+
+p.credits{
+    text-indent: 2em;
+}
+
+/* Text Shadow: The text-shadow property creates a drop shadow or an embossed effect behind text. It takes three lengths and a color, specifying the shadow's offset, blur, and color. */
+
+h1.heading{
+    color: brown;
+    text-shadow: 2px 2px 5px hsla(0, 59%, 41%, 0.723);
+}
+
+/* Vertical Align: The vertical-align property specifies the vertical alignment of an element's content */
+/* It is commonly used with inline-level elements such as <img>, <em>, or <strong> */
+div#verticle-align > img{
+    vertical-align:middle;
+}
+
+/* Pseudo-element & Pseudo-class */
+
+/* Pseudo-elements acts like an extra element in the code and allows you to style a specific part of an element's content, such as the first letter or line of text. */
+
+#pseudo > h3::first-letter{
+    font-size: 24px;
+    color: brown;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+/* Pseudo-classes allow you to style elements based on their state or position, such as when a user hovers over an element */
+
+#pseudo a{
+    text-decoration:none;
+}
+
+#pseudo a:link{
+    color: brown;
+}
+#pseudo a:visited{
+    color: rgb(0, 0, 0);
+}
+
+#pseudo a:active{
+    color: rgb(255, 25, 25);
+}
+
+#pseudo input{
+    border: 1.5px inset rgb(209, 209, 209);
+}
+
+#pseudo input:focus{
+    border: 1.5px inset rgb(194, 52, 52);
+}
+
 
