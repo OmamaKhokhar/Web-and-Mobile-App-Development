@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Fjalla One";
+    src: url(assets/Fonts/Fjalla-One.woff2);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Header Of the Website*/
+header, div.main-header table{
+    width: 100%;
+}
+
+/* Links  in Header */
+header a{
+    text-decoration: none;
+}
+
+/* Main Header */
+div.main-header{
+    width: 95%;
+    margin: 0% 2.5% 0.2% 2.5%; 
+    padding: 8px 6px;
+    text-align: center;
+    color: #49484D;
+    font-family: "Roboto Serif", Palatino, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.6px;
+}
+
+/* Main Header Left Side */
+td.header-left-side-1,td.header-left-side-2,td.header-left-side-3{
+    width: 35%;
+    padding-left: 90px;
+}
+
+td.header-left-side-1{
+    font-size: 22px;
+}
+
+/* Main Header Right Side */
+td.header-center-side {
+    width: 30%;
+}
+
+/* Main Heder Right Side */
+td.header-right-side-1,td.header-right-side-2,td.header-right-side-3{
+    width: 35%;
+    padding-right: 90px;
+}
+
+td.header-right-side-1{
+    font-size: 26px;
+}
+
+/* Links in Main Header */
+div.main-header a{
+    color: #252f3f;
+}
+
+td.header-left-side-1 a,td.header-right-side-1 a{
+    color:#d7752b;
+}
+
+span.main-header-border{
+    padding-bottom: 15px;
+    border-bottom:  2.2px solid green;
+}
+/* Header Calender */
+td.header-calender{
+    font-style: normal;
+    font-size: 15px;
+}
+
+/* Navigation Bar header */
+div.nav-header{
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* Navigation Bar Header Box */
+div.nav-header table{
+    width: fit-content;
+    margin: 16px auto 12px auto;
+}
+
+/* Navigation Bar Header Content */
+div.nav-header td{
+    font-family: "Fjalla One", "Arial Narrow", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0px 8px 0px 8px;
+    letter-spacing: 3px;
+}
+
+td.nav-header-border{
+    border-right: 1px solid black;
+}
+
+/* Links in Nav Header */
+div.nav-header a{
+    color: #000000;
+}
+
+div.nav-header a:hover{
+    color: #ea8c39;
+}
