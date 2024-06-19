@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(assets/Fonts/Raleway.ttf);
+}
+/* Navigation Bar */
+nav.bg-body-color{
+    background-color: #ED262E;
+}
+
+.nav-link{
+    font-family: "Raleway";
+}
+.nav-link:hover , .active{ 
+    color: #3b3939 !important;
+    font-weight: bold !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(assets/Icons/menu.png);
+}
