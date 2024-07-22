@@ -1,0 +1,24 @@
+
+.container{
+    border: 2px solid black;
+}
+
+.row{
+    border: 2px solid #e00000;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.beige{
+    background-color: beige;
+}
+
+.pink{
+    background-color: rgb(232, 136, 152);
+}
+
+.border{
+    border: 2px solid rebeccapurple !important;
+}

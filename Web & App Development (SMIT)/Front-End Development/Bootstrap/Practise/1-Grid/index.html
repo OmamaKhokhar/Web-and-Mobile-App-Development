@@ -1,0 +1,73 @@
+<!-- Bootstrap 
+ Bootstrap installation : Compiled CSS and Javascipt file, CDN link via jsDelivr, Bootstrap Package through package manager like NPM .
+ Grid Layout Include : Breakpoints, Container , Grid , Nested Grid-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout | Grid</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Breakpoints : Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap. 
+    Bootstrap includes six default breakpoints:
+    Extra small	None	<576px
+    Small	sm	≥576px
+    Medium	md	≥768px
+    Large	lg	≥992px
+    Extra large	xl	≥1200px
+    Extra extra large	xxl	≥1400px-->
+
+    <!-- Containers: ontainers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. 
+    Bootstrap comes with three different containers:
+    .container: .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
+    .container-{breakpoint}: Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints. 
+    .container-fluid: .container-fluid is used for a full width container, spanning the entire width of the viewport. -->
+
+    <!-- Grid System: Bootstraps grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
+    Containers: Containers are the basic layout element used to wrap and align content within the grid system.
+    Rows: Rows are horizontal wrappers for columns, providing structure and spacing within the grid. 
+    Columns: Columns are vertical divisions within a row, allowing for flexible layout design. There are 12 columns available per row, allowing you to create different combinations of elements that span any number of columns. Each column has horizontal padding (called a gutter) for controlling the space between them.
+    Gutters: Gutters are the spaces between columns, ensuring proper spacing and alignment within the grid.-->
+
+    <div class="container">
+        <h1>Grid</h1>
+        <div class="row">
+            <div class="col-4 border">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat nulla voluptatem laboriosam corporis explicabo nobis ducimus, impedit necessitatibus quaerat officiis provident, illo repudiandae reprehenderit molestiae laborum recusandae voluptas est.
+            </div>
+            <div class="col-4 border">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat nulla voluptatem laboriosam corporis explicabo nobis ducimus, impedit necessitatibus quaerat officiis provident, illo repudiandae reprehenderit molestiae laborum recusandae voluptas est.
+            </div>
+            <div class="col-4 border">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat nulla voluptatem laboriosam corporis explicabo nobis ducimus, impedit necessitatibus quaerat officiis provident, illo repudiandae reprehenderit molestiae laborum recusandae voluptas est.
+            </div>
+        </div>
+    </div>
+
+    <!-- Nested Grid: Nesting in Bootstrap allows you to create complex layouts by placing a new .row and set of columns inside an existing column. This means you can further divide a column into sub-columns, as long as the total number of columns in the nested row does not exceed 12. -->
+    <div class="container">
+        <h1>Nested Grid</h1>
+        <div class="row">
+            <div class="col-6 border">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatibus corrupti sint eligendi, nam reiciendis itaque veniam aliquam laborum tempora maxime maiores. Quis quae pariatur officia dolorem repellendus, sint rerum.
+                Sit quia consectetur quam similique voluptatem, rerum accusamus facilis atque quidem doloremque error architecto. Nulla quidem numquam nihil esse cupiditate sit rerum reprehenderit voluptatibus incidunt odit quas delectus, nostrum illo.
+                Officia qui dolorum, neque sequi eos accusamus porro cupiditate non aliquid atque doloribus, aperiam vel, obcaecati labore. Cupiditate mollitia ipsam possimus, modi cum deleniti nulla iste repudiandae blanditiis nemo non.
+                Fugiat sequi commodi atque itaque pariatur accusantium, error earum, maiores enim labore sunt sint minima animi veniam laborum rerum explicabo. Odit, dolor. Sapiente nam totam nobis. Dicta et architecto cumque!
+            </div>
+            <div class="col-6 border">
+                <div class="row">
+                    <div class="col-4 border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, aliquid ab commodi consequatur eum quae architecto nemo suscipit mollitia excepturi.</div>
+                    <div class="col-4 border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, aliquid ab commodi consequatur eum quae architecto nemo suscipit mollitia excepturi.</div>
+                    <div class="col-4 border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, aliquid ab commodi consequatur eum quae architecto nemo suscipit mollitia excepturi.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
