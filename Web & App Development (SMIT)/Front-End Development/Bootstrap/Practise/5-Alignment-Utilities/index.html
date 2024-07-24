@@ -1,0 +1,111 @@
+<!-- Bootstrap
+ Alignment: Horizontal Alignment , Vertical Alignment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+
+    <!-- Alignment: Alignment: It refers to the positioning and arrangement of elements within a container using utility classes.It provides a set of classes to control both horizontal and vertical alignment of flex items.-->
+
+    <!-- Horizontal Alignment: .justify-content-* Controls the horizontal alignment of flex items within a container along the main axis.You can use breakpoint like .justify-content-breakpoint-* for responsiveness.
+    justify-content-start: Aligns items to the start (left) of the container.
+    justify-content-end: Aligns items to the end (right) of the container.
+    justify-content-center: Centers items horizontally within the container.
+    justify-content-between: Distributes items with space between them.
+    justify-content-around: Distributes items with space around them.
+    justify-content-evenly: Distributes items with equal space around and between them. -->
+    <div class="container mb-4">
+      <div class="row row-cols-1 ">
+        <h1>Horizontal Alignment</h1>
+        <div class="col">
+          <div class="row mb-3 justify-content-start">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 justify-content-end">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 justify-content-center">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 justify-content-between">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 justify-content-around">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 justify-content-evenly">
+            <div class="col-4 pink">column 1 of 2</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical Alignment: .align-items-* Controls the vertical alignment of flex items within a container along the cross axis. You can use breakpoint like .align-items-breakpoint-* for responsiveness.
+    align-items-start: Aligns items to the start (top) of the container.
+    align-items-end: Aligns items to the end (bottom) of the container.
+    align-items-center: Centers items vertically within the container.
+    align-items-baseline: Aligns items along their baseline.
+    align-items-stretch: Stretches items to fill the container vertically. -->
+    <div class="container mb-4">
+      <div class="row row-cols-1">
+        <h1>Vertical Alignment</h1>
+        <div class="col">
+          <div class="row mb-3 align-items-start">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 align-items-end">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 align-items-center">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 align-items-baseline">
+            <div class="col-4 pink" style="font-size: 18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3 align-items-stretch">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown">column 2 of 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
