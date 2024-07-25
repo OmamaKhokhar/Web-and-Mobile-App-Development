@@ -73,7 +73,7 @@
     align-items-stretch: Stretches items to fill the container vertically. -->
     <div class="container mb-4">
       <div class="row row-cols-1">
-        <h1>Vertical Alignment</h1>
+        <h1>Vertical Alignment: Align-items</h1>
         <div class="col">
           <div class="row mb-3 align-items-start">
             <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
@@ -106,6 +106,54 @@
         </div>
       </div>
     </div>
+
+    <!-- Vertical Alignment: .align-self-* Controls the vertical alignment of a single flex item within a container along the cross axis, overriding the container's align-items class. You can use breakpoints like .align-self-breakpoint-* for responsiveness.
+    align-self-start: Aligns the item to the start (top) of the container.
+    align-self-end: Aligns the item to the end (bottom) of the container.
+    align-self-center: Centers the item vertically within the container.
+    align-self-baseline: Aligns the item along its baseline.
+    align-self-stretch: Stretches the item to fill the container vertically. -->
+    <div class="container mb-4">
+      <div class="row row-cols-1">
+        <h1>Vertical Alignment: Align-Self</h1>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown align-self-start">column 2 of 3</div>
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown align-self-end">column 2 of 3</div>
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown align-self-center">column 2 of 3</div>
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-4 pink" style="font-size: 18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown  align-self-baseline">column 2 of 3</div>
+            <div class="col-4 pink" style="font-size: 18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row mb-3">
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+            <div class="col-4 brown align-self-stretch">column 2 of 3</div>
+            <div class="col-4 pink">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro velit illum perspiciatis.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
   </body>
 </html>
