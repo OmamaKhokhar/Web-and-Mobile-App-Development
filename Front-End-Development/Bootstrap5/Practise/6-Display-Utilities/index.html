@@ -1,15 +1,49 @@
 <!-- Bootstrap
-Display :  -->
+Display : Display Classes, Display Print Classes -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Display Utilities</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     
-</body>
+    <!-- Display: Display specifies how an element is displayed in the document layout. The Display utility classes that allow you to control the display property of elements across different screen sizes. These classes are structured to apply to all breakpoints, from extra small (xs) to extra extra large (XXL) such as .d-{value} for xs and .d-{breakpoint}-{value} for sm, md, lg, xl, and xxl.-->
+
+    <!-- Display in print: Change the display value of elements when printing with our print display utility classes:
+    .d-print-none, .d-print-inline, .d-print-inline-block, .d-print-block, .d-print-grid, .d-print-inline-grid, .d-print-table, .d-print-table-row, .d-print-table-cell, .d-print-flex, .d-print-inline-flex -->
+
+    <!-- none: .d-none hides the element on all screen sizes. The element is completely removed from the document layout. -->
+    <!-- inline: .d-inline displays the element as inline on all screen sizes. The element is displayed as an inline element, meaning it does not start on a new line and only takes up as much width as necessary. -->
+    <!-- inline-block: .d-inline-block displays the element as inline-block on all screen sizes. The element is formatted as an inline element but can accept block-level properties like width and height. -->
+    <!-- block: .d-block displays the element as block on all screen sizes. The element starts on a new line and takes up the full width available (by default). -->
+    <!-- grid: .d-grid displays the element as grid on all screen sizes. The element is displayed as a grid container, enabling the use of CSS Grid Layout properties. -->
+    <!-- inline-grid: .d-inline-grid displays the element as inline-grid on all screen sizes. The element is displayed as an inline-level grid container. -->
+    <!-- table: .d-table displays the element as table on all screen sizes. The element behaves like a <table> element. -->
+    <!-- table-cell: .d-table-cell displays the element as table-cell on all screen sizes. The element behaves like a <td> or <th> element within a table. -->
+    <!-- table-row: .d-table-row displays the element as table-row on all screen sizes. The element behaves like a <tr> element within a table. -->
+    <!-- flex: .d-flex displays the element as flex on all screen sizes. The element is displayed as a flex container, enabling the use of CSS Flexbox properties. -->
+    <!-- inline-flex: .d-inline-flex displays the element as inline-flex on all screen sizes. The element is displayed as an inline-level flex container. -->
+
+    <div class="container-fluid">
+      <div class="border p-5">
+        <h1>Logo</h1>
+      </div>
+      <div class="d-flex" style="height: 50vh">
+        <div class="pink vw-100">
+            <h3>Main Content</h3>
+        </div>
+        <div class="beige d-md-block d-none d-print-md-block d-print-none" style="width: 20%;">
+            <h3>SideBar</h3>
+        </div>
+      </div>
+      <div class="border p-5">
+        <h1>Footer</h1>
+      </div>
+    </div>
+
+  </body>
 </html>
