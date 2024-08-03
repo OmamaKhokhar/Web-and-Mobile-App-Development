@@ -1,7 +1,8 @@
 <!-- Bootstrap
-Flex :  -->
+Flex : Enable Flex Behaviour, Flex Direction, Flex Alignment Utilities, Flex Wrap, Align Content, Flex Fill, Flex Grow and Shrink -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,131 @@ Flex :  -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
+
+    <!-- Flex: .d-flex or .d-inline-flex enable Flex Behavior by display utilities to create a flexbox container and transform direct children elements into flex items. Responsive variations also exist for .d-flex and .d-inline-flex by using breakpoints classes. -->
+    <div class="container mb-4">
+        <div class="d-flex border">
+            <div class="pink p-3" style="width: 40%;">Hello</div>
+            <div class="beige p-3" style="width: 20%;">There</div>
+            <div class="pink p-3" style="width: 40%;">This is Display Flex</div>
+        </div>
+        <div class="d-inline-flex border">
+            <div class="pink p-3" style="width: 40%;">Hello</div>
+            <div class="beige p-3" style="width: 20%;">There</div>
+            <div class="pink p-3" style="width: 40%;">This is Display Inline Flex</div>
+        </div>
+    </div>
+
+    <!-- FLex Direction: The Flex Direction Utilities sets the direction of flex items in a flex container.Responsive variations also exist for flex-direction like flex-row, .flex-row-reverse, .flex-column, .flex-column-reverse.
+    Row: .flex-row to set a horizontal direction (the browser default), and .flex-row-reverse to start the horizontal direction from the opposite side.
+    Column: .flex-column to set a vertical directon and ,flex-column-reverse to start the verticle direction from opposite side. -->
+    <div class="container mb-4">
+        <div>
+            <h2>Flex Direction : Row amd Row Reverse</h2>
+            <div class="row flex-row">
+                <div class="col p-4 border">1</div>
+                <div class="col p-4 border">2</div>
+                <div class="col p-4 border">3</div>
+                <div class="col p-4 border">4</div>
+                <div class="col p-4 border">5</div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col p-4 border">1</div>
+                <div class="col p-4 border">2</div>
+                <div class="col p-4 border">3</div>
+                <div class="col p-4 border">4</div>
+                <div class="col p-4 border">5</div>
+            </div>
+        </div>
+        <div>
+            <h2>Flex Direction : Column amd Column Reverse</h2>
+            <div class="row flex-column">
+                <div class="col-3 p-4 border">1</div>
+                <div class="col-3 p-4 border">2</div>
+                <div class="col-3 p-4 border">3</div>
+                <div class="col-3 p-4 border">4</div>
+                <div class="col-3 p-4 border">5</div>
+            </div>
+            <div class="row flex-column-reverse">
+                <div class="col-3 p-4 border">1</div>
+                <div class="col-3 p-4 border">2</div>
+                <div class="col-3 p-4 border">3</div>
+                <div class="col-3 p-4 border">4</div>
+                <div class="col-3 p-4 border">5</div>
+            </div>
+        </div>
+    </div>
     
+    <!-- Flex Alignment Utilities: It refers to the positioning and arrangement of elements within a container using utility classes.It provides a set of classes to control both horizontal and vertical alignment of flex items.Detailed explained with each classes in 5-Alignment-Utilities.
+    Justify-Content: Align flex items along the main axis.
+    Align-Items: Align flex items along the cross axis.
+    Align-Self: Individually align flex items along the cross axis.-->
+
+    <!-- FLex Wrap: Flex wrap classes in Bootstrap 5 allows you to control how flex items wrap within a flex container. 
+    .flex-nowrap: By default, flex items are set to .flex-nowrap, meaning they will not wrap and will stay on a single line.
+    .flex-wrap: This can make the items wrap onto multiple lines as needed, ensuring a responsive and flexible layout.
+    .flex-wrap-reverse: This can be used to wrap the items in the reverse order. Responsive variations also exist for flex-wrap.-->
+    <div class="container mb-4">
+        <div class="d-flex flex-wrap border">
+            <div class="border">1- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">2- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">3- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">4- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        </div>
+        <div class="d-flex flex-wrap-reverse border">
+            <div class="border">1- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">2- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">3- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            <div class="border">4- Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        </div>
+    </div>
+
+    <!-- Align Content: The align-content allows us to align multiple flex lines within a flex container when there is extra space on the cross axis. It distributes the rows or columns as a group within the container.In Bootstrap 5, the align-content utilities align flex items together on the cross axis using classes like .align-content-start, .align-content-end, .align-content-center, .align-content-between, .align-content-around, and .align-content-stretch. These classes control the vertical or horizontal spacing of flex lines within a flex container.Responsive variations also exist for align content. -->
+    <div class="container mb-4">
+        <div class="d-flex flex-wrap align-content-center" style="height: 80px;">
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+            <div class="border">This is Flex Item</div>
+        </div>
+    </div>
+
+    <!-- Flex Fill: The .flex-fill forces elements within a flex container to take up all available horizontal space. It ensures that the element with .flex-fill stretches to fill the remaining space, creating equal or proportional widths among the items.-->
+    <div class="container mb-4">
+        <div class="d-flex beige">
+            <div class="border">This is Flex Item</div>
+            <div class="border flex-fill">This is Flex Fill Item</div>
+            <div class="border">This is Flex Item</div>
+        </div>
+        <div class="row">
+            <div class="border col-6">Col 1 of 3</div>
+            <div class="border col flex-fill">Col 2 of 3 with Flex Fill</div>
+            <div class="border col-6">Col 3 of 3</div>
+        </div>
+    </div>
+
+    <!-- Flex Grow: Use .flex-grow-* utilities in Bootstrap 5 to allow a flex item to grow and fill available space, such as .flex-grow-1 to expand an element proportionally within its container. Responsive variations also exist for flex-grow.
+    Flex Shrink: Use .flex-shrink-* utilities in Bootstrap 5 to allow a flex item to shrink if necessary, like .flex-shrink-1 to reduce an element's size to fit within the container, ensuring space for other items.Responsive variations also exist for flex-shrink. -->
+    <div class="container mb-4">
+        <div class="d-flex beige">
+            <div class="border flex-grow-1">This is Flex Item with flex grow</div>
+            <div class="border">This is Flex Item</div>
+        </div>
+        <div class="d-flex pink">
+            <div class="border flex-shrink-1">This is Flex Item with flex shrink</div>
+            <div class="border w-100">This is Flex Item with maximum width</div>
+        </div>
+    </div>
+
 </body>
+
 </html>
