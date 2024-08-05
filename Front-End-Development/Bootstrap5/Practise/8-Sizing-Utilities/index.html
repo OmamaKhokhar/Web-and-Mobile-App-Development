@@ -1,0 +1,79 @@
+<!-- Bootstrap
+Sizing Utilities: Width and height by percentage, Max width and Max Height, Viewport Width and Viewport Height, Min Viewport Width and Min Viewport Height -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Utilities</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Sizing Utilities: It provides a set of classes to set the width and height of elements relative to their parent or viewport. -->
+
+    <!-- Width and Height by Percentage: Width and height utilities allow you to make an element as wide or as tall as you need, relative to its parent.
+    .w-25: Sets the width to 25% of the parent.
+    .w-50: Sets the width to 50% of the parent.
+    .w-75: Sets the width to 75% of the parent.
+    .w-100: Sets the width to 100% of the parent.
+    .h-25: Sets the height to 25% of the parent.
+    .h-50: Sets the height to 50% of the parent.
+    .h-75: Sets the height to 75% of the parent.
+    .h-100: Sets the height to 100% of the parent.
+    .w-auto and .h-auto: Automatically adjusts the width and height.-->
+
+    <!-- Max Width and Max Height: These utilities provide control over the maximum dimensions of an element. They ensure that an element does not exceed the specified maximum size.
+    .mw-100: Sets the maximum width to 100%.
+    .mh-100: Sets the maximum height to 100%. -->
+
+    <!-- Viewport Width and Viewport Height:
+    Utilities for setting dimensions relative to the viewport. These classes help in creating responsive designs that adjust to the size of the viewport.
+    .vw-25: Sets the width to 25% of the viewport.
+    .vw-50: Sets the width to 50% of the viewport.
+    .vw-75: Sets the width to 75% of the viewport.
+    .vw-100: Sets the width to 100% of the viewport.
+    .vh-25: Sets the height to 25% of the viewport.
+    .vh-50: Sets the height to 50% of the viewport.
+    .vh-75: Sets the height to 75% of the viewport.
+    .vh-100: Sets the height to 100% of the viewport. -->
+
+    <!-- Min Viewport Width and Min Viewport Height:
+    These utilities ensure that an element has a minimum dimension relative to the viewport, preventing it from being smaller than the specified size.
+    .min-vw-100: Sets the minimum width to 100% of the viewport.
+    .min-vh-100: Sets the minimum height to 100% of the viewport. -->
+
+    <div class="vw-100 vh-100 brown">
+        <div class="border h-50">
+            <div class="w-25 h-25" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width and Height of 25% relative to Parent
+            </div>
+            <div class="w-50 h-25" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 50% and Height of 25% relative to Parent
+            </div>
+            <div class="w-75 h-25" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 75% and Height of 25% relative to Parent
+            </div>
+            <div class="w-100 h-25" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 100% and Height of 25% relative to Parent
+            </div>
+        </div>
+        <div class="d-flex border h-50">
+            <div class="w-25 h-25" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width and Height of 25% relative to Parent
+            </div>
+            <div class="w-25 h-50" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 25% and Height of 50% relative to Parent
+            </div>
+            <div class="w-25 h-75" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 25% and Height of 75% relative to Parent
+            </div>
+            <div class="w-25 h-100" style="background-color:rgb(146, 210, 231); border: 2px solid rgb(33, 139, 134) ;">
+                Width of 25% and Height of 100% relative to Parent
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
