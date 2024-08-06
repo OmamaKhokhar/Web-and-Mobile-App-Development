@@ -1,0 +1,30 @@
+<!-- Bootstrap
+Float Utilities: Float Start, Float End, Float None
+Helper: Clearfix -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Utilities</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Float: These utility classes float an element to the left or right or disable floating. They adjust the float property of an element based on the viewport size, using CSS float.
+    Float Start: .float-start class floats an element to the start (left in LTR, right in RTL). It ensures content aligns to the beginning of the container.
+    Float End: .float-end class floats an element to the end (right in LTR, left in RTL). It ensures content aligns to the end of the container.
+    Float None: The .float-none class disables floating on an element. It ensures the element does not float and remains in the normal document flow.
+
+    Clearfix: The .clearfix Helpers clears floated content within a container. Adding .clearfix to a parent element prevents layout issues by forcing it to clear its floated children. -->
+
+    <div class="container" >
+        <div class="float clearfix">
+            <div class="d-inline-block w-25 h-50 pink flaot-strat"></div>
+            <div class="d-inline-block w-25 h-50 pink float-end"></div>
+        </div>
+    </div>
+
+</body>
+</html>
