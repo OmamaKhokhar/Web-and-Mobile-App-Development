@@ -1,0 +1,51 @@
+<!-- Bootstrap
+Position and Translate Utilities: Position, Position Values, Arrange Elements, Translate Middle -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Utilities</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Position Utilities: It used for utilities for quickly configuring the position of an element.
+    
+    Position Values: It Quickly positioning classes are available, though they are not responsive.
+    .position-static: Default positioning. The element is positioned according to the normal flow of the document.
+    .position-relative: The element is positioned relative to its normal position. Offsets can be applied using top, right, bottom, and left properties.
+    .position-absolute: The element is positioned absolutely to its nearest positioned ancestor (not static).
+    .position-fixed: The element is positioned relative to the viewport, meaning it stays in the same place even when the page is scrolled.
+    .position-sticky: The element is positioned based on the user's scroll position. It toggles between relative and fixed, depending on the scroll position.
+
+    Arrange Elements: It arrange elements easily with the edge positioning utilities. The format is {property}-{position}.
+    Properties:
+    top: For the vertical top position.
+    start: For the horizontal left position (in LTR).
+    bottom: For the vertical bottom position.
+    end: For the horizontal right position (in LTR).
+    Positions:
+    0: For 0 edge position.
+    50: For 50% edge position.
+    100: For 100% edge position. -->
+
+    <!--Translate: The translate allows you to move an element along the X and Y axes. This movement is relative to the element’s original position .
+    Translate-Middle: The .translate-middle class combines translateX(-50%) and translateY(-50%). This utility centers an element by moving it 50% to the left and 50% up from its current position, typically used with absolute positioning to achieve precise centering.
+    Translate-Middle-X: The .translate-middle-x class applies translateX(-50%). This horizontally centers an element by moving it 50% to the left.
+    Translate-Middle-Y: The .translate-middle-y class applies translateY(-50%). This vertically centers an element by moving it 50% up from its original position.-->
+
+    <div class="container p-3">
+        <button type="button" class="position-relative top-50 start-50 btn btn-dark"
+            style="width: 140px; height: 70px;">
+            <h3>Alerts</h3><span
+                class="position-absolute top-0 start-100 translate-middle bg-danger rounded-circle p-1">+99<span
+                    class="visually-hidden">unread messages</span></span>
+        </button>
+    </div>
+
+</body>
+
+</html>
