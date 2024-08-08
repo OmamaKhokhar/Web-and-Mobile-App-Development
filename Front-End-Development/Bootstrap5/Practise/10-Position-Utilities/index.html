@@ -1,5 +1,6 @@
 <!-- Bootstrap
-Position and Translate Utilities: Position, Position Values, Arrange Elements, Translate Middle -->
+Position and Translate Utilities: Position, Position Values, Arrange Elements, Translate Middle
+Helpers: Fixed top and Bottom, Sticky top and bottom -->
 <html lang="en">
 
 <head>
@@ -32,12 +33,18 @@ Position and Translate Utilities: Position, Position Values, Arrange Elements, T
     50: For 50% edge position.
     100: For 100% edge position. -->
 
+    <!-- There are some Helpers for position: 
+    Fixed Top: Positions an element at the top of the viewport, spanning from edge to edge using the .fixed-top class. The element remains fixed as you scroll. Responsive variants do not exist for this utility.
+    Fixed Bottom: Positions an element at the bottom of the viewport, spanning from edge to edge using the .fixed-bottom class. The element remains fixed as you scroll. Responsive variants do not exist for this utility.
+    Sticky Top: Positions an element at the top of the viewport but only after you scroll past it using the .sticky-top class. The element becomes "sticky" as it reaches the top. Responsive variants also exist for this utility.
+    Sticky Bottom: Positions an element at the bottom of the viewport but only after you scroll past it using the .sticky-bottom class. Responsive variants also exist for this utility. -->
+    
     <!--Translate: The translate allows you to move an element along the X and Y axes. This movement is relative to the element’s original position .
     Translate-Middle: The .translate-middle class combines translateX(-50%) and translateY(-50%). This utility centers an element by moving it 50% to the left and 50% up from its current position, typically used with absolute positioning to achieve precise centering.
     Translate-Middle-X: The .translate-middle-x class applies translateX(-50%). This horizontally centers an element by moving it 50% to the left.
     Translate-Middle-Y: The .translate-middle-y class applies translateY(-50%). This vertically centers an element by moving it 50% up from its original position.-->
 
-    <div class="container p-3">
+    <div class="container p-3 fixed-top">
         <button type="button" class="position-relative top-50 start-50 btn btn-dark"
             style="width: 140px; height: 70px;">
             <h3>Alerts</h3><span
