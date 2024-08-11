@@ -1,0 +1,102 @@
+<!-- Bootstrap
+Colors Utilities: Text Color, Text Color with opacity
+Background Utilities: Background Color, Gradeint Background-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Background Utilities</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <!-- Color Utilities: Color utilities allow you to apply specific colors to text, backgrounds, and other elements to convey meaning or emphasize content.
+
+    The Color Classes for text are these:
+    .text-primary
+    .text-secondary
+    .text-success
+    .text-danger
+    .text-warning
+    .text-info
+    .text-light
+    .text-dark
+    .text-body
+    .text-black
+    .text-white
+    
+    Text Color with Opacity:
+    Text color with opacity utilities apply specific text colors with varying degrees of opacity.
+    these are the text colowr with opacity of 50%:
+    .text-black-50
+    .text-white-50 -->
+    
+    <!-- Background Utilities: Background utilities allow you to set the background color of an element using predefined classes. These classes do not affect the text color.
+    These are the Background Classes for solid backgrounds colors:
+    .bg-primary
+    .bg-secondary
+    .bg-success
+    .bg-danger
+    .bg-warning
+    .bg-info
+    .bg-light
+    .bg-dark
+    .bg-body
+    .bg-black
+    .bg-white
+    .bg-transparent
+
+    Background Gradient: Background gradient utilities add a linear gradient as the background image for the specified element. The gradient starts with a semi-transparent white and fades out, adding depth and dimension to the background.
+    There are the Background Gradient Classes:
+    .bg-primary.bg-gradient
+    .bg-secondary.bg-gradient
+    .bg-success.bg-gradient
+    .bg-danger.bg-gradient
+    .bg-warning.bg-gradient
+    .bg-info.bg-gradient
+    .bg-light.bg-gradient
+    .bg-dark.bg-gradient
+    .bg-black.bg-gradient -->
+
+    <!-- Combined Text and Background Utility Classes: This allows you to apply both a background color and a contrasting text color to an element with one class, instead of using separate .text- and .bg- classes. For example, using text-bg-primary -->
+    <div class="container p-4 border">
+        <h1 class="bg-danger text-white p-2 mb-4">Text Colors and Background Colors</h1>
+        <div class="row row-cols-lg-3 row-cols-2">
+            <div class="col bg-info text-white">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <h2>Text Colors</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur dolorum dolore nostrum illo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-dark text-info">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <h2>Text Colors</h2>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur dolorum dolore nostrum illo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-bg-warning">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <h2>Text Colors</h2>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur dolorum dolore nostrum illo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
