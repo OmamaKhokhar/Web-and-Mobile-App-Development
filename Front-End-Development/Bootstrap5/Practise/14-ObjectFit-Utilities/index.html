@@ -1,0 +1,49 @@
+<!-- Bootstrap
+Object Fit: Object Fit Utilities-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Utilities</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<style>
+    .img-container {
+        width: 300px;
+        height: 200px;
+        border: 2px solid #000;
+    }
+</style>
+
+<body>
+    <!-- Use the object-fit utilities to control how the content of a replaced element, (e.g., <img> or <video>) is resized to fit its container. The utilities are responsive, 
+    allowing you to adjust the fit at different breakpoints. -->
+    <!-- .object-fit-contain: Scales the content to fit within the container while preserving the aspect ratio.
+    .object-fit-cover: Scales the content to cover the entire container, possibly cropping it.
+    .object-fit-fill: Stretches the content to completely fill the container, possibly distorting it.
+    .object-fit-scale: Scales the content down to the smallest size that fits within the container.
+    .object-fit-none: The content retains its original size and aspect ratio. -->
+    <div class="container">
+        <div class="row">
+            <div class="col img-container">
+                <img src="images/Image-1.jpeg" class="w-100 h-100 object-fit-contain" alt="Mountain">
+            </div>
+            <div class="col img-container">
+                <img src="images/Image-2.jpeg" class="w-100 h-100 object-fit-cover" alt="Mountain">
+            </div>
+            <div class="col img-container">
+                <img src="images/Image-3.jpeg" class="w-100 h-100 object-fit-fill" alt="Mountain">
+            </div>
+            <div class="col img-container">
+                <img src="images/Image-4.jpeg" class="w-100 h-100 object-fit-scale" alt="Mountain">
+            </div>
+            <div class="col img-container">
+                <img src="images/Image-5.jpg" class="w-100 h-100 object-fit-none" alt="Mountain">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
