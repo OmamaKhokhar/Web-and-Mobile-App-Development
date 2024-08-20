@@ -1,0 +1,64 @@
+/* Layout:*/
+
+/* Normal Flow: The default layout behavior of elements, where block-level elements stack vertically and inline elements align horizontally. */
+.block {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.inline {
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Relative Positioning: Allows you to move an element from its original position relative to where it would normally be. */
+.relative-box {
+    background-color: lightcoral;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* Absolute Positioning: Positions an element relative to its nearest positioned ancestor, taking it out of the normal flow. */
+.absolute-container {
+    position: relative;
+    height: 100px;
+    background-color: lightyellow;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* Floats: Allows elements to float to the left or right of their container, enabling text and inline elements to wrap around them. */
+.float-left {
+    float: left;
+    width: 45%;
+    background-color: lightpink;
+    padding: 10px;
+    margin: 5px;
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+    background-color: lightsalmon;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Responsive Design: Ensures elements adjust based on screen size, using fluid layouts. */
+.responsive-box {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,125 @@
+/* Controlling Box Size */
+/* A box can be sized using properties like width and height.
+   The dimensions can be set using pixels (px), percentages (%), or em units (em). */
+div.box {
+    height: 300px;
+    width: 300px;
+    background-color: #bbbbaa;
+}
+
+p {
+    height: 75%;
+    width: 75%;
+    background-color: #0088dd;
+}
+
+/* Limiting Width: min-width, max-width */
+div.box-min-max p.description {
+    min-width: 450px;
+    max-width: 650px;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+}
+
+/* Limiting Height: min-height, max-height */
+div.box-height p {
+    width: 400px;
+    font-size: 90%;
+    line-height: 1.2em;
+    min-height: 10px;
+    max-height: 30px;
+}
+
+/* Understanding the Box Model */
+/* The box model includes the content, padding, border, and margin areas. */
+p.example {
+    width: 300px;
+    border: 2px solid #0088dd;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Displaying and Hiding Boxes */
+/* The display property controls whether a box is rendered or not. */
+div.display-box {
+    display: block;
+    background-color: #aaddcc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+div.hidden-box {
+    display: none;
+}
+
+/* Box Dimensions */
+/* Dimensions of a box can be controlled with width and height properties. */
+div.dimension-box {
+    width: 200px;
+    height: 100px;
+    background-color: #ffcc00;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Handling Overflowing Content */
+/* The overflow property manages how content that exceeds a box's size is handled. */
+div.overflow-box.one {
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    background-color: #ff9999;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+div.overflow-box.two {
+    overflow: scroll;
+    width: 200px;
+    height: 50px;
+    background-color: #99ccff;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Border: Defines the line surrounding the box's content.
+   Margin: Space outside the border, creating separation between this box and others.
+   Padding: Space between the content and the inside edge of the border. */
+p.spacing-example {
+    border-width: 3px;        /* Setting border width */
+    border-style: solid;      /* Setting border style */
+    border-color: #000000;    /* Setting border color */
+    
+    margin-top: 20px;         /* Setting top margin */
+    margin-right: 20px;       /* Setting right margin */
+    margin-bottom: 20px;      /* Setting bottom margin */
+    margin-left: 20px;        /* Setting left margin */
+    
+    padding-top: 10px;        /* Setting top padding */
+    padding-right: 10px;      /* Setting right padding */
+    padding-bottom: 10px;     /* Setting bottom padding */
+    padding-left: 10px;       /* Setting left padding */
+    
+    width: 250px;
+    background-color: #ddeeff;
+}
+
+/* Shorthand Properties */
+/* Combine multiple properties into a single declaration for borders, padding, and margin. */
+p.shorthand-example {
+    width: 250px;
+    border: 3px dotted #0088dd;  /* Shorthand for border-width, border-style, and border-color */
+    padding: 10px 5px 3px 1px;   /* Shorthand for top, right, bottom, and left padding */
+    margin: 15px;                /* Shorthand for setting all sides of margin */
+}
+
+/* Centering Content */
+/* Center a box horizontally by setting the margin-left and margin-right to auto. */
+p.centered-content {
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #88cc88;
+    padding: 5px;
+}

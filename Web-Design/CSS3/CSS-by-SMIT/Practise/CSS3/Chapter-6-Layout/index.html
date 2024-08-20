@@ -1,0 +1,88 @@
+<!-- Chapter 6: Layout
+This chapter includes:
+Normal Flow: Understanding the default layout behavior of elements.
+Relative Positioning: Using relative positioning to adjust elements without affecting others.
+Absolute Positioning: Placing elements relative to their nearest positioned ancestor or initial containing block.
+Floats: Applying floats to create text wrapping and custom layouts.
+Responsive Design: Techniques for creating layouts that adapt to different screen sizes.
+Grid Systems: Implementing grid systems to create complex and flexible layouts.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="description" content="Lecture - 6 about Layout in CSS">
+    <title>Chapter 6: Layout</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Layout</h1>
+    </header>
+
+    <main>
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <a href="#normal-flow"><li>Normal Flow</li></a>
+                <a href="#relative-positioning"><li>Relative Positioning</li></a>
+                <a href="#absolute-positioning"><li>Absolute Positioning</li></a>
+                <a href="#floats"><li>Floats</li></a>
+                <a href="#responsive-design"><li>Responsive Design</li></a>
+                <a href="#grid-systems"><li>Grid Systems</li></a>
+            </ul>
+        </div>
+
+        <!-- Normal Flow -->
+        <div id="normal-flow">
+            <h2>Normal Flow</h2>
+            <p>This section demonstrates the default layout behavior of elements.</p>
+            <div class="block">Block Level Element</div>
+            <span class="inline">Inline Element</span>
+        </div>
+
+        <hr/>
+
+        <!-- Relative Positioning -->
+        <div id="relative-positioning">
+            <h2>Relative Positioning</h2>
+            <div class="relative-box">Relative Box</div>
+        </div>
+
+        <hr/>
+
+        <!-- Absolute Positioning -->
+        <div id="absolute-positioning">
+            <h2>Absolute Positioning</h2>
+            <div class="absolute-container">
+                <div class="absolute-box">Absolute Box</div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Floats -->
+        <div id="floats">
+            <h2>Floats</h2>
+            <div class="float-left">Float Left</div>
+            <div class="float-right">Float Right</div>
+        </div>
+
+        <hr/>
+
+        <!-- Responsive Design -->
+        <div id="responsive-design">
+            <h2>Responsive Design</h2>
+            <div class="responsive-box">Responsive Box</div>
+        </div>
+
+    </main>
+
+</body>
+</html>

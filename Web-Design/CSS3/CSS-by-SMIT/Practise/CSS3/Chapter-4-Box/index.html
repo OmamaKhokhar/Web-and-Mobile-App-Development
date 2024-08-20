@@ -1,0 +1,139 @@
+<!-- Chapter 4: Box Model
+This chapter includes:
+Controlling Size of Boxes
+Box Model: Understanding the elements of a box including borders, margin, and padding.
+Displaying and Hiding Boxes: Using CSS properties to control how boxes appear or disappear on the webpage.
+Box Dimensions: width, height, min-width, max-width, min-height, max-height.
+Overflowing Content: overflow property.
+Border, Margin & Padding with Shorthand Properties
+Centering Content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="description" content="Lecture - 4 about Box Model in CSS3">
+    <title>Chapter 4: Box Model</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Box Model</h1>
+    </header>
+
+    <main>
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <a href="#box-size"><li>Controlling Box Size</li></a>
+                <a href="#box-model"><li>Understanding the Box Model</li></a>
+                <a href="#display"><li>Displaying and Hiding Boxes</li></a>
+                <a href="#box-dimensions"><li>Box Dimensions</li></a>
+                <a href="#overflow"><li>Handling Overflowing Content</li></a>
+                <a href="#spacing"><li>Border, Margin & Padding</li></a>
+                <a href="#shorthand"><li>Shorthand Properties</li></a>
+                <a href="#centering"><li>Centering Content</li></a>
+            </ul>
+        </div>
+
+        <hr/>
+
+        <!-- Controlling Box Size -->
+        <div id="box-size">
+            <h2>Controlling Box Size</h2>
+
+            <div class="box">
+                <p>This is a 300px by 300px box with a 75% sized paragraph inside.</p>
+            </div>
+
+            <div class="box-min-max">
+                <p class="description">This is a box with min-width 450px and max-width 650px.</p>
+            </div>
+
+            <div class="box-height">
+                <p>This box's height is limited to a max-height of 30px.</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Understanding the Box Model -->
+        <div id="box-model">
+            <h2>Understanding the Box Model</h2>
+            <p class="example">This box demonstrates the use of border, margin, and padding.</p>
+        </div>
+
+        <hr/>
+
+        <!-- Displaying and Hiding Boxes -->
+        <div id="display">
+            <h2>Displaying and Hiding Boxes</h2>
+            <div class="display-box">
+                <p>This box is visible.</p>
+            </div>
+            <div class="hidden-box">
+                <p>This box is hidden using display: none.</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Box Dimensions -->
+        <div id="box-dimensions">
+            <h2>Box Dimensions</h2>
+            <div class="dimension-box">
+                <p>This box has specified width and height properties.</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Handling Overflowing Content -->
+        <div id="overflow">
+            <h2>Handling Overflowing Content</h2>
+            <div class="overflow-box one">
+                <p>Overflow hidden: Content outside this box is hidden.</p>
+            </div>
+            <div class="overflow-box two">
+                <p>Overflow scroll: Scrollbars will appear for content exceeding the box size.</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Border, Margin & Padding -->
+        <div id="spacing">
+            <h2>Border, Margin & Padding</h2>
+            <p class="spacing-example">This box has margin and padding applied, along with a border.</p>
+        </div>
+
+        <hr/>
+
+        <!-- Shorthand Properties -->
+        <div id="shorthand">
+            <h2>Shorthand Properties</h2>
+            <p class="shorthand-example">This box uses shorthand properties for border, padding, and margin.</p>
+        </div>
+
+        <hr/>
+
+        <!-- Centering Content -->
+        <div id="centering">
+            <h2>Centering Content</h2>
+            <p class="centered-content">This content is centered horizontally.</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+
+<style>

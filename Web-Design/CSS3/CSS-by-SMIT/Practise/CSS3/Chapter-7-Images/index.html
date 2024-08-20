@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omama Khokhar">
+    <meta name="description" content="Lecture - 6 about Controlling Images and Backgrounds in CSS">
+    <title>Chapter 6: Controlling Images and Backgrounds</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Images and Backgrounds</h1>
+    </header>
+
+    <main>
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <a href="#controlling-size"><li>Controlling Size of Images</li></a>
+                <a href="#aligning-images"><li>Aligning Images</li></a>
+                <a href="#background-images"><li>Adding Background Images</li></a>
+            </ul>
+        </div>
+
+        <!-- Controlling Size of Images -->
+        <div id="controlling-size">
+            <h2>Controlling Size of Images</h2>
+            <img src="Images/Flag_of_palestine.jpg" alt="Small Image" class="small">
+            <img src="Images/Flag_of_palestine.jpg" alt="Medium Image" class="medium">
+            <img src="Images/Flag_of_palestine.jpg" alt="Large Image" class="large">
+        </div>
+
+        <hr/>
+
+        <!-- Aligning Images -->
+        <div id="aligning-images">
+            <h2>Aligning Images</h2>
+            <p>
+                <img src="Images/Flag_of_palestine.jpg" width="120px" alt="Float Left" class="align-left">
+                This text wraps around the image aligned to the left.
+            </p>
+            <p>
+                <img src="Images/Flag_of_palestine.jpg" width="120px" alt="Float Right" class="align-right">
+                This text wraps around the image aligned to the right.
+            </p>
+            <img src="Images/Flag_of_palestine.jpg" width="120px" alt="Centered Image" class="centered">
+        </div>
+
+        <hr/>
+
+        <!-- Adding Background Images -->
+        <div id="background-images">
+            <h2>Adding Background Images</h2>
+            <div class="background-container">
+                This container has a background image.
+            </div>
+            <div class="gradient-background">
+                This container has a gradient background.
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
