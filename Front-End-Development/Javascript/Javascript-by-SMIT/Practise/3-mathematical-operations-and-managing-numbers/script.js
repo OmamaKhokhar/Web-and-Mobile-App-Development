@@ -12,3 +12,9 @@ var socialScience = 85;
 
 var totalMarks = marksPerSubject * subjectCount;
 var obtainedMarks = math + english + science + urdu + socialScience;
+
+// Chapter 6: Math Expressions: Unfamiliar Operators
+// Increment (++) adds 1 to a variable, and decrement (--) subtracts 1.
+// Postfix: The variable's original value is used in the expression before the increment occurs.
+// Prefix: The variable is incremented first, and the updated value is used in the expression.
+obtainedMarks++; 
