@@ -18,3 +18,21 @@ var obtainedMarks = math + english + science + urdu + socialScience;
 // Postfix: The variable's original value is used in the expression before the increment occurs.
 // Prefix: The variable is incremented first, and the updated value is used in the expression.
 obtainedMarks++; 
+
+// Chapter 7: Math Expressions: eliminating ambiguity
+// Order of Operations: Multiplication and division have higher precedence than addition and subtraction
+// Left-to-Right: Operations of the same precedence are evaluated from left to right 
+// Parentheses: Use parentheses to override default precedence and control operation order/
+var averageMarks = obtainedMarks / subjectCount;
+var percentage = (obtainedMarks / totalMarks) * 100;
+
+document.write("<h2>Marksheet</h2>");
+document.write("<p>Math: " + math + "</p>");
+document.write("<p>English: " + english + "</p>");
+document.write("<p>Science: " + science + "</p>");
+document.write("<p>Urdu: " + urdu + "</p>");
+document.write("<p>Social Science: " + socialScience + "</p>");
+document.write("<p>Total Marks: " + totalMarks + "</p>");
+document.write("<p>Obtained Marks: " + obtainedMarks + "</p>");
+document.write("<p>Average Marks: " + averageMarks + "</p>");
+document.write("<p>Percentage: " + percentage + "%</p>");
