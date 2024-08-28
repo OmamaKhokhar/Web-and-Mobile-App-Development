@@ -6,7 +6,6 @@
 
 // Chapter 2: Variables in String
 // A variable in string means it is a container that stores a value, such as a text string and the text must always be enclosed in quotes.
-
 var fullName = "Umama Khokhar";
 fullName = "Omama Khokhar";
 
@@ -21,3 +20,16 @@ var gainWeight;
 gainWeight = newWeight - weigth;
 
 alert("Your Gain Weight is " + gainWeight);
+
+// Chapter 4: Variable Names Legal and Illegal
+// Rules for Naming Variables:
+// No Quotation Marks: Variable names can't be in quotes.
+// No Numbers at Start: Names can't be or start with a number.
+// No Keywords: Avoid JavaScript keywords (e.g., alert, var).
+// No Spaces: Variable names can't have spaces.
+// Allowed Characters: Use letters, numbers, $, and _ only.
+// Case Sensitive: rose and Rose are different.
+// Naming Conventions: Use camelCase with meaningful names 
+
+var age = 17;
+alert("Your age is " + age);
