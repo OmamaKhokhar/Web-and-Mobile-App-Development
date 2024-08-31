@@ -15,9 +15,21 @@
 // >=: Checks if the left value is greater than or equal to the right.
 // <=: Checks if the left value is less than or equal to the right.
 
+// Chapter 12: Else and Else If Statements
+// Else If Statement: An extension of the if statement that allows you to test additional conditions if the initial if condition fails.
+// Else Statement: A control structure that allows you to execute a block of code if the previous if condition is false.
 
 var capitalOfPakistan = prompt("Enter the Capital of Pakitstan: ");
 
 if (capitalOfPakistan === "Islamabad"){
     alert("Correct");
+}
+else if (capitalOfPakistan === "Lahore"){
+    alert("Close, but not the capital")
+}
+else if (capitalOfPakistan === "Karachi"){
+    alert("Not the capital after 14 August 1967, try again.")
+}
+else {
+    alert("Not the capital, try again.");
 }
