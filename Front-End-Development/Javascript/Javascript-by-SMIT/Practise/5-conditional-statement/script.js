@@ -41,3 +41,43 @@ else {
 // Testing Multiple Conditions with OR (||):
 // The || operator allows you to test if any of a set of conditions is true. If at least one condition is true, the code block will execute; if all conditions are false, the code block will not execute.
 // Combining AND (&&) and OR (||) Conditions
+
+// Chapter 14: Nested if Statements
+// A nested if statement is an if statement that exists inside another if or else block. This allows you to test further conditions only if the initial condition is true.
+
+
+// Problem: Employee Performance Evaluation System
+// The program should assess employees based on various criteria, such as age, years of service, average monthly sales, and job performance score. The system will determine the employee's eligibility for a bonus, promotion, or no action based on the inputs provided.
+
+// Define criteria values
+var bonusAge = 28; 
+var bonusYears = 3;
+var bonusSales = 8000; 
+var bonusScore = 6; 
+
+var promoAge = 35;
+var promoYears = 10;
+var promoSales = 20000; 
+var promoScore = 9; 
+
+// Get employee details
+var employeeName = prompt("Enter your Name: ", "Ali");
+var employeeAge = +prompt("Enter your Age: ", 28);
+var yearsOfService = +prompt("Enter your Years of Service: ", 6);
+var monthlySales = +prompt("Enter your Average Monthly Sales: ", 12000);
+var performanceScore = +prompt("Enter your Job Performance Score (1 to 10): ", 8);
+
+// Check eligibility
+if (employeeAge >= promoAge &&
+    yearsOfService > promoYears &&
+    monthlySales > promoSales &&
+    performanceScore > promoScore) {
+    alert("Great News!! " + employeeName + " You got the Promotion");
+} else if (employeeAge >= bonusAge &&
+    yearsOfService > bonusYears &&
+    monthlySales > bonusSales &&
+    performanceScore > bonusScore) {
+    alert("Amazing!! " + employeeName + " You got the Bonus");
+} else {
+    alert("Keep up the good work, but no bonus or promotion at this time.");
+}
