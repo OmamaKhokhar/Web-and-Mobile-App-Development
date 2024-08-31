@@ -33,3 +33,11 @@ else if (capitalOfPakistan === "Karachi"){
 else {
     alert("Not the capital, try again.");
 }
+
+// Chapter 13: Testing Sets of Conditions
+// Test multiple conditions using logical operators like && (AND) and || (OR) in JavaScript. This allows you to execute code blocks based on whether a combination of conditions is true or false.
+// Testing Multiple Conditions with AND (&&):
+// The && operator allows you to test if multiple conditions are true simultaneously. If all the conditions are true, the code block will execute; if any condition is false, the code block will not execute.
+// Testing Multiple Conditions with OR (||):
+// The || operator allows you to test if any of a set of conditions is true. If at least one condition is true, the code block will execute; if all conditions are false, the code block will not execute.
+// Combining AND (&&) and OR (||) Conditions
