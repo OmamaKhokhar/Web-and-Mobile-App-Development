@@ -51,3 +51,18 @@ var floatNumber = parseFloat("10.7890");
 console.log(`ParseInt: ${intNumber}
 PareFloat: ${floatNumber}`);
 
+// Chapter 29: Converting Strings to Numbers, Numbers to Strings
+
+// Converting Strings to Numbers
+// Number() converts both integers and floating-point numbers from strings to numbers.
+var intString = "124";
+console.log(Number(intString));
+
+var intFloat = "124.099756";
+console.log(Number(intFloat));
+
+// Converting Numbers to Strings
+// Use toString() to convert a number into a string for formatting or other purposes.
+var userAge = 18;
+var userAgeString = userAge.toString();
+console.log(userAgeString);
