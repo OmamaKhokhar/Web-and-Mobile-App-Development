@@ -67,3 +67,41 @@ for( var i = 0; i < order.length; i++){
 
 totalOrder = Math.ceil(totalOrder);
 console.log("Total meals order for Preparation: " + totalOrder);
+
+// Chapter 27: Generating Random Numbers
+// The concept of generating random numbers in JavaScript, specifically using the Math.random() function.
+// Math.random() function produces a pseudo-random decimal number between 0 (inclusive) and 1 (exclusive).
+
+// Problem 1: Simulating a Lottery Draw
+// Description: Create a program that simulates a lottery draw. The lottery allows users to select 3 unique numbers between 1 and 10. The program should randomly generate a set of winning numbers.
+
+var userName = prompt("Enter your Name: ");
+var userNumber;
+var userLotteryNumber = [];
+var winnerLottery;
+var winnerLotteryNumber = [];
+
+for (var i = 1; i <= 3; i++){
+    userNumber = +prompt(`Enter Lottery Number ${i}: `);
+
+    if (userNumber < 1 || userNumber > 10) {
+        userNumber = +prompt(`Enter Lottery Number ${i} under 10: `);
+    }
+
+    userLotteryNumber.push(userNumber);
+}
+console.log(`${userName} Lottery Numbers: ${userLotteryNumber}`);
+
+for (var i = 1; i <= 3; i++){
+    winnerLottery = Math.ceil(Math.random() * 10);
+    winnerLotteryNumber.push(winnerLottery);
+}
+console.log(`Lucky Number to win: ${winnerLotteryNumber}`);
+
+for (var i = 0; i < winnerLotteryNumber.length; i++){
+    for (var j = 0; j < winnerLotteryNumber.length; j++) {
+        if (userLotteryNumber[i] === winnerLotteryNumber[j]){
+            console.log(`Lottery Number ${userLotteryNumber[i]}: You Win!!`);
+        }
+    }
+}
