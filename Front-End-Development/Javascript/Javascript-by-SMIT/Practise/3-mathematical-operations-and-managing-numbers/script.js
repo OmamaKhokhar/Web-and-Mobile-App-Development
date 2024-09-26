@@ -36,3 +36,34 @@ document.write("<p>Total Marks: " + totalMarks + "</p>");
 document.write("<p>Obtained Marks: " + obtainedMarks + "</p>");
 document.write("<p>Average Marks: " + averageMarks + "</p>");
 document.write("<p>Percentage: " + percentage + "%</p>");
+
+// Chapter 26: Rounding Numbers
+//  Round numbers to the nearest integer using various methods to round up, down, or to the nearest whole number.
+// Math.round(): Rounds to the nearest integer. If the decimal is 0.5 or higher, it rounds up; otherwise, it rounds down.
+// Math.ceil(): Always rounds up, no matter how small the decimal. 
+// Math.floor(): Always rounds down, no matter how large the decimal.
+
+// Problem: Rating System
+// a simple rating system. Each item receives multiple ratings, and you need to display the average rating rounded to the nearest whole number.
+var rating = [4.5, 3.5, 4.8, 2.9, 3.7];
+var sumRating = 0;
+var avgRating;
+
+for (var i = 0; i < rating.length; i++){
+    sumRating += rating[i];
+}
+
+avgRating = Math.round(sumRating / rating.length);
+console.log("Average Rating for this Product: " + avgRating);
+
+// Problem: Food Delivery Service
+// Customers order fractional meals, and you need to round up to the nearest full meal for preparation.
+var order = [1.3, 2.4, 5.2, 3.3, 8.1];
+var totalOrder = 0;
+
+for( var i = 0; i < order.length; i++){
+    totalOrder += order[i];
+}
+
+totalOrder = Math.ceil(totalOrder);
+console.log("Total meals order for Preparation: " + totalOrder);
