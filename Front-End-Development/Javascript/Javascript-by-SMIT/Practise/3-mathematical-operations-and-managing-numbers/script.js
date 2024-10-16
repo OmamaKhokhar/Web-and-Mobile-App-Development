@@ -105,3 +105,60 @@ for (var i = 0; i < winnerLotteryNumber.length; i++){
         }
     }
 }
+
+// Chapter 30: Controlling the Length of Decimals
+// When working with decimals, you often need to round them for display purposes.
+// toFixed() rounds a number to a specified number of decimal places and returns it as a string.
+var randomNumber = Math.random() * 10;
+var fixedRandomNumber = randomNumber.toFixed();
+var decimalRandomNumber = randomNumber.toFixed(2);
+
+console.log(`The Random Number: ${randomNumber}
+The fixed Random Number: ${fixedRandomNumber}
+The decimal Random Number: ${decimalRandomNumber} `
+);
+
+
+// Problem Name: Coin Toss Game
+// Description: A simple game where two players choose heads or tails, and the winner is determined by a simulated coin flip.
+var head = 1;
+var tail = 2;
+var randomCoin = Math.ceil(Math.random() * 2);
+
+var player1 = parseInt(prompt("Player 1 Enter Head(1) OR Tail(2): "));
+if (player1 !== head &&  player1 !== tail){
+    player1 = parseInt(prompt("Player 1 Enter Head(1) OR Tail(2): "));
+}
+
+var player2 = parseInt(prompt("Player 2 Enter Head(1) OR Tail(2): "));
+if (player2 !== head &&  player2 !== tail){
+    player2 = parseInt(prompt("Player 2 Enter Head(1) OR Tail(2): "));
+}
+
+if (player1 === randomCoin && player2 === randomCoin){
+    if (head === randomCoin){
+        alert("TIE!! Player 1 and Player 2 both Win  by choosing Head.");
+    }
+    else{
+        alert("TIE!! Player 1 and Player 2 both Win  by choosing Tail.");
+    }
+}
+else if (player1 === randomCoin){
+    if (head === randomCoin){
+        alert(`Player 1 Won by choosing Head!!`);
+    }
+    else{
+        alert(`Player 1 Won by choosing Tail!!`);
+    }   
+}
+else if (player2 === randomCoin){
+    if (head === randomCoin){
+        alert(`Player 2 Won by choosing Head!!`);
+    }
+    else{
+        alert(`Player 2 Won by choosing Tail!!`);
+    }   
+}
+else{
+        alert("LOSE!! Player 1 and Player 2 both Lose.");
+}
