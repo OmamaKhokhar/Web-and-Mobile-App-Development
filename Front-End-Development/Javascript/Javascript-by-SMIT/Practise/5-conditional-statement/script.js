@@ -1,4 +1,4 @@
-// Control Statements: Conditional Statment 
+// Control Statements: Conditional Statement 
 // A conditional statement is a programming construct that executes different code blocks based on whether a specified condition is true or false.
 
 // Chapter 10: if statements
@@ -80,4 +80,38 @@ if (employeeAge >= promoAge &&
     alert("Amazing!! " + employeeName + " You got the Bonus");
 } else {
     alert("Keep up the good work, but no bonus or promotion at this time.");
+}
+
+// Chapter 39: switch statements: how to start them
+// switch: A control structure that tests a variable against different values (cases).
+// Begins with the keyword switch, followed by the variable to test inside parentheses.
+// Each case: Represents a possible value for the variable.
+// break: Ensures the code stops after executing the matching case to avoid running other cases.
+
+// Chapter 40: switch statements: how to complete them
+// Each case's block ends with a break statement, Without break, JavaScript would execute all subsequent cases after a match.
+// default: Executes if none of the cases match, similar to else in if...else. 
+// default is the fallback case that runs if none of the other cases match, similar to else.
+
+// Project Name: Order System Validation
+// Description: Create a basic order system where users enter a number, and the program outputs the corresponding item (1 = Burger, 2 = Pizza, etc.).
+var order = +prompt("Enter Number to get Surprised Meal (1 to 5): ")
+switch (order) {
+    case 1:
+        alert("Surprise! Enjoy your Burger");
+        break;
+    case 2:
+        alert("Surprise! Enjoy your Pizza");
+        break;
+    case 3:
+        alert("Surprise! Enjoy your Biryani");
+        break;
+    case 4:
+        alert("Surprise! Enjoy your Pasta");
+        break;
+    case 5:
+        alert("Surprise! Enjoy your Daal Chawal");
+        break;
+    default:
+        alert("Enter the Valid Number");
 }
