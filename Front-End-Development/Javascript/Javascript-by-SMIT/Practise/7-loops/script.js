@@ -90,3 +90,90 @@ for (var i = 0; i < userNumber.length; i++){
 }
 
 alert("The Sum of digits for " + userNumber + " is " + sumOfDigit);
+
+// Chapter 41: while Loops
+// while loop: Executes a block of code repeatedly as long as the condition remains true.
+// Initialization: The counter is set before the loop starts.
+// Condition: The loop continues to run while the condition evaluates to true.
+// Update: The counter must be updated within the loop to avoid infinite loops.
+
+// Chapter 42: do...while Loops
+// do...while loop: Similar to a while loop, but ensures that the block of code runs at least once, regardless of the condition.
+// Initialization: The counter is set before the loop starts.
+// Execution: The block of code runs first, then the condition is evaluated.
+// Condition: After running the code once, the condition is checked. If true, the loop continues.
+// Difference: do...while loops always execute the code once, even if the condition is initially false.
+
+// Problem: User Authentication and Data Entry System
+// Description: Create a system where a user must authenticate with a username and password, and then enter multiple pieces of data (e.g., daily expenses). The program should allow the user to retry the login if incorrect credentials are provided, with a maximum of 3 attempts. Once logged in, the user can input multiple daily expenses until they choose to stop, after which the total expenses are shown.
+
+var userName = "admin";
+var userPassword = "12admin12";
+var dailyExpensesItems = [];
+var dailyExpensesPrice = [];
+var totalExpenses = 0;
+var item;
+var price;
+
+
+var attempts = 0;
+var totalChances = 3;
+
+// User Authentication for Login
+while (attempts < totalChances) {
+    var inputtedUserName = prompt("Enter your username: ");
+    var inputtedUserPassword = prompt("Enter your password: ");
+
+    if (userName === inputtedUserName  && userPassword === inputtedUserPassword) {
+        alert("Logged In")
+        dailyExpensesRegister();
+    }
+    else if(userName === inputtedUserName){
+        attempts++;
+        alert(`Wrong Password!! ${totalChances - attempts} Chances are Left`);
+    }
+    else if(userPassword === inputtedUserPassword) {
+        attempts++;
+        alert(`Wrong Username!! ${totalChances - attempts} Chances are Left`);
+    }
+    else{
+        attempts++;
+        alert(`Login Failed!! ${totalChances - attempts} Chances are Left`)
+    }
+
+    if (chance === totalChances){
+        alert("Maximum attempts reached. Please try again later.");
+    }
+}
+
+// A register to store Items and its prices 
+function dailyExpensesRegister() {
+    var stop = "stop";
+    var flag = true;
+    alert("Make Today`s Daily Expenses Register by entering the list of items with prices you bought today")
+
+    while (flag) {
+        item = prompt("Enter the item name and stop by typing 'stop' :", "White Sauce Pasta");
+
+        if (item === stop){
+            totalDailyExpenses();
+            flag = false;
+        }
+        else{
+            price = +prompt("Enter the price of the item", "800");
+            dailyExpensesItems.push(item);
+            dailyExpensesPrice.push(price)
+        }
+    }
+}
+
+// Calculator for Todays total expenses 
+function totalDailyExpenses(){
+    var message;
+    for (var i = 0; i < dailyExpensesPrice.length; i++){
+        totalExpenses += dailyExpensesPrice[i];
+    }
+
+    message = alert(`Total Expenses for Today: ${totalExpenses}`);
+    return message;
+}
