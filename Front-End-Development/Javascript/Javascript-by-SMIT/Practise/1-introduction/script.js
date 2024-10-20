@@ -23,3 +23,10 @@ alert("Hi! " + fullName + " from " + country + "\nNice to meet You! \nHave a Nic
 // Best Practice: Place scripts at the end of the <body> to ensure that the page content loads first
 // External JavaScript files are recommended for better organization and reusability. 
 // Link them using the <script src="file.js"></script> tag, usually placed at the end of the <body>.
+
+// Chapter 44: Commenting
+// Comments are ignored by the browser and used to explain code.
+// 1. Single-line comments: 
+// Start with // and everything after is ignored.
+// 2. Multi-line comments: 
+// Use /* to open and */ to close for multiple lines.
