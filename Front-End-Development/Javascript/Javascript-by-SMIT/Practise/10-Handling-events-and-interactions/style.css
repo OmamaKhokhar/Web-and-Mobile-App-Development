@@ -1,0 +1,252 @@
+/* Base Styling */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #151920;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container with Glassmorphism */
+.form-container {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); 
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 400px; 
+  margin: auto; 
+  text-align: center; 
+  color: #ffffff; 
+}
+
+/* Adjusted Heading Style */
+.form-container h1 {
+  color: #f0f0f0; 
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Heading */
+.form-container h1 {
+  color: #0097b2;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 95%; 
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #0097b2;
+  border-radius: 8px;
+  background-color: #151920;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #ffffff;
+}
+
+
+/* Autofill styling */
+input:-webkit-autofill {
+  appearance: none !important;
+  background-color: #151920 !important;
+  color: #ffffff !important;
+  transition: background-color 9999s ease-in-out, color 9999s ease-in-out;
+}
+
+/* Radio Group */
+.radio-group label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+/* Submit Button */
+button {
+  background-color: #0097b2;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color:  #151920;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for All Screens */
+@media (max-width: 576px) { /* Extra Small Screens */
+  .form-container {
+    padding: 20px;
+    border-radius: 16px;
+    max-width: 340px;
+  }
+  .form-container h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { /* Small Screens */
+  .form-container {
+    padding: 25px;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { /* Medium Screens */
+  .form-container {
+    padding: 30px;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 992px) { /* Large and Above Screens */
+  .form-container {
+    padding: 20px 30px;
+    max-width: 450px;
+  }
+}
+
+/* Error message style */
+.error-message , .email-error-message{
+  display: none;
+  color: rgba(200, 26, 26, 0.8);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submit-show{
+  color: rgba(200, 26, 26);
+}
+
+
+/* To show the error message when JavaScript is triggered */
+.show {
+  display: inline-block;
+}
+
+/* Modal container */
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 1000; /* Ensure it's on top */
+  backdrop-filter: blur(5px); /* Add a frosted-glass effect to the background */
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
+}
+
+/* Hide modal container initially */
+.hidden {
+  display: none !important;
+}
+
+/* Modal card design */
+.card {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
+  backdrop-filter: blur(15px); /* Stronger frosted glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass look */
+  border-radius: 20px; /* Smooth, rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Depth effect */
+  max-width: 400px;
+  width: 90%;
+  padding: 25px 20px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal title */
+.card h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Modal text */
+.card p {
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin: 10px 0;
+  text-align: left;
+  
+}
+
+/* Close button */
+.card button {
+  background-color: #0097b2;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #151920; /* Match the theme of the form */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for modal appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

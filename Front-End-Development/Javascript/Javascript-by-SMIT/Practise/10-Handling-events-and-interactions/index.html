@@ -1,0 +1,85 @@
+<!--Javascript
+Handling Events and Interactions: Discover how to interact with users by handling various events, including mouse clicks, button presses, and form submissions.
+
+Additional Topic:
+- Additional Event Concept 
+- Regular Expression
+- Trim Methods
+
+This folder covers the following chapters:
+- Chapter 45: Event - link  
+- Chapter 46: Events: button
+- Chapter 47: Events: link
+- Chapter 48: Events: mouse
+- Chapter 49: Events: fields
+- Chapter 50: Reading field values
+- Chapter 51: Setting field values
+- Chapter 52: Reading and setting paragraph text
+- Chapter 53: Swapping images
+- Chapter 54: Swapping images and setting classes
+- Chapter 55: Setting style
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handling Events and Interactions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>         
+
+<body>
+  <div class="form-container">
+    <h1>Share Your Feedback</h1>
+    <form id="submit">
+      <!-- Name Input -->
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Omama Khokhar">
+        <span id="name-error" class="error-message"></span>
+      </div>
+      
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="omamakhokhar@example.com">
+        <span id="email-error" class="error-message"></span>
+      </div>
+
+      <!-- Rating -->
+      <div class="form-group">
+        <label>Rate Your Experience:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="rating" value="Good"> Good</label>
+          <label><input type="radio" name="rating" value="Average"> Average</label>
+          <label><input type="radio" name="rating" value="Poor"> Poor</label>
+        </div>
+        <span id="rating-error" class="error-message"></span>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+      <span id="submit-error" class="error-message"></span>
+    </form>
+  </div>
+
+  <!-- Feedback Card -->
+  <div id="card-container" class="hidden">
+    <div class="card">
+      <h2>Thank You!</h2>
+      <p>Your feedback has been submitted successfully.</p>
+      <div class="card-content">
+        <p id="submitted-name"></p>
+        <p id="submitted-email"></p>
+        <p id="submitted-rate"></p>
+      </div>
+      <button id="close-Btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
