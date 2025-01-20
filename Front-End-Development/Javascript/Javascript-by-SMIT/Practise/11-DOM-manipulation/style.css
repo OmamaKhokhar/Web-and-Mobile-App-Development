@@ -1,0 +1,16 @@
+/* Style for error message */
+#message , #slowestKey-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #result span {
+    font-weight: bold;
+    color: blue;
+  }
+  

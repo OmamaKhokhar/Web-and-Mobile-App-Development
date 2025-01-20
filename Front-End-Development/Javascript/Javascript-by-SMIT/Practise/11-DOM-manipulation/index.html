@@ -1,0 +1,56 @@
+<!--JavaScript  
+DOM Manipulation: Master the Document Object Model to dynamically access, traverse, and modify HTML elements and their properties.
+
+This folder covers the following chapters:  
+- Chapter 56: Target all elements by tag name  
+- Chapter 57: Target some elements by tag name  
+- Chapter 58: The DOM  
+- Chapter 59: The DOM: Parents and children  
+- Chapter 60: The DOM: Finding children  
+- Chapter 61: The DOM: Junk artifacts and nodeType  
+- Chapter 62: More ways to target elements  
+- Chapter 63: Getting a target's name  
+- Chapter 64: Counting elements  
+- Chapter 65: Attributes  
+- Chapter 66: Attribute names and values  
+- Chapter 67: Adding nodes  
+- Chapter 68: Inserting nodes  
+-->  
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div>
+    <h2>Bracket Balance</h2>
+    <label for="equation">Equation:
+      <input name="equation" type="text" id="equation" required>
+    </label>
+    <p id="message" class="hidden">⚠️ Please enter only brackets (e.g., {}, [], ()).</p>
+    <p id="result">Result: <span></span></p>
+  </div>
+
+  <div>
+    <h2>Slowest Key Identifier</h2>
+    <label for="key">Word:
+      <input name="key" type="text" id="key" required>
+    </label>
+    <p id="slowestKey-message" class="hidden"></p>
+    <button type="submit" id="submit">submit</button>
+    <p id="slowestKey" class="hidden"></p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
