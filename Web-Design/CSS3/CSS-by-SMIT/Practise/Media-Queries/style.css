@@ -1,0 +1,31 @@
+/* ===== Media Query Basics ===== */
+/* Media Queries allow responsive design by applying styles based on device properties. */
+/* Syntax: @media (condition) { CSS rules } */
+
+/* ===== Media Types ===== */
+/* all - Default, applies to all devices */
+/* screen - Screens (phones, tablets, desktops) */
+/* print - Printers (used for print-friendly styles) */
+/* speech - Screen readers (for audio output) */
+
+/* ===== Media Features ===== */
+/* Viewport Size */
+/* min-width - Applies when width is at least X px */
+/* max-width - Applies when width is at most X px */
+
+/* Orientation */
+/* orientation: portrait - Styles for vertical screens */
+/* orientation: landscape - Styles for horizontal screens */
+
+/* Resolution */
+/* min-resolution - Targets high-DPI (Retina) screens */
+/* max-resolution - Targets lower-resolution displays */
+
+/* User Preferences */
+/* prefers-color-scheme - Detects light or dark mode */
+/* prefers-reduced-motion - Detects if user prefers fewer animations */
+
+/* ===== Media Query Operators ===== */
+/* and - Combines multiple conditions */
+/* or (comma) - Applies if any condition is true */
+/* not - Excludes a condition */
